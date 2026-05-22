@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake or Real — Spot the Impostor</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <main class="app">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-mark">◆</span>
+        <span class="logo-text">FAKE<span class="logo-accent">/REAL</span></span>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label">Score</span>
+          <span class="stat-value" id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Streak</span>
+          <span class="stat-value" id="streak">0<span class="flame" id="flame">🔥</span></span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Round</span>
+          <span class="stat-value"><span id="round">1</span>/<span id="total-rounds">10</span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTRO SCREEN -->
+    <section class="screen screen-intro active" id="screen-intro">
+      <div class="intro-card">
+        <div class="badge">A word-guessing game</div>
+        <h1 class="title">Spot the <span class="gradient-text">Impostor</span></h1>
+        <p class="subtitle">
+          One word in each category is completely made up — but it looks <em>suspiciously</em> real.
+          Can you trust your instincts?
+        </p>
+        <div class="how-grid">
+          <div class="how-item">
+            <div class="how-icon">①</div>
+            <div class="how-text"><strong>Read</strong> the category and four options.</div>
+          </div>
+          <div class="how-item">
+            <div class="how-icon">②</div>
+            <div class="how-text"><strong>Pick</strong> the word you believe is fake.</div>
+          </div>
+          <div class="how-item">
+            <div class="how-icon">③</div>
+            <div class="how-text"><strong>Score</strong> points & build your streak.</div>
+          </div>
+        </div>
+        <button class="btn-primary" id="btn-start">
+          <span>Start Playing</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- GAME SCREEN -->
+    <section class="screen screen-game" id="screen-game">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="category-tag" id="category-tag">Category</div>
+      <h2 class="question">Which one is <span class="fake-word">fake</span>?</h2>
+
+      <div class="options" id="options"></div>
+
+      <div class="feedback" id="feedback">
+        <div class="feedback-icon" id="feedback-icon"></div>
+        <div class="feedback-text">
+          <div class="feedback-title" id="feedback-title"></div>
+          <div class="feedback-detail" id="feedback-detail"></div>
+        </div>
+        <button class="btn-next" id="btn-next">Next →</button>
+      </div>
+    </section>
+
+    <!-- RESULTS SCREEN -->
+    <section class="screen screen-results" id="screen-results">
+      <div class="results-card">
+        <div class="trophy" id="trophy">🏆</div>
+        <h2 class="results-title" id="results-title">Well played!</h2>
+        <p class="results-subtitle" id="results-subtitle">Here's how you did</p>
+
+        <div class="results-stats">
+          <div class="result-stat">
+            <span class="result-value" id="final-score">0</span>
+            <span class="result-label">Final Score</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-value" id="final-correct">0/10</span>
+            <span class="result-label">Correct</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-value" id="final-streak">0</span>
+            <span class="result-label">Best Streak</span>
+          </div>
+        </div>
+
+        <div class="rank-badge" id="rank-badge">Rookie Detective</div>
+
+        <button class="btn-primary" id="btn-restart">
+          <span>Play Again</span>
+          <span class="btn-arrow">↻</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Made with ♥ — pick wisely.</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
