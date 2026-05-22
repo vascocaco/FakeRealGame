@@ -4,7 +4,6 @@
 
   const socket = window.gameSocket;
   let multiplayerMode = false;
-  let currentRound = null;
   let hasAnswered = false;
 
   // ===== ELEMENTS =====
@@ -86,7 +85,6 @@
 
   // ===== ROUND START =====
   socket.on('round-start', (round) => {
-    currentRound = round;
     hasAnswered = false;
 
     el.categoryTag.textContent = round.category;
@@ -195,12 +193,6 @@
     }
     el.feedbackDetail.textContent = result.hint;
 
-    // Update streak display
-    if (myResult) {
-      const myFullResult = result.leaderboard.find(r => r.id === socket.id);
-      // streak is not in leaderboard, derive from consecutive corrects
-    }
-
     // Update leaderboard
     renderLeaderboard(result.leaderboard);
   });
@@ -221,6 +213,7 @@
   socket.on('game-over', ({ leaderboard, loser, podium }) => {
     multiplayerMode = false;
     el.progressFill.style.width = '100%';
+    el.btnPlayAgain.style.display = 'none';
 
     // Show podium screen
     showScreen('podium');

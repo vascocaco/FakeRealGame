@@ -152,7 +152,7 @@
     renderPlayers(players);
     // Check if we became host
     const me = players.find(p => p.id === socket.id);
-    if (me && me.isHost) {
+    if (me?.isHost) {
       window.isHost = true;
       updateHostUI();
     }
@@ -167,6 +167,8 @@
 
   socket.on('back-to-lobby', ({ players }) => {
     renderPlayers(players);
+    const me = players.find(p => p.id === socket.id);
+    window.isHost = Boolean(me?.isHost);
     updateHostUI();
     showScreen('waiting');
   });
