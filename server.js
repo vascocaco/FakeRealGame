@@ -3,10 +3,11 @@ const http = require('http');
 const express = require('express');
 const { Server } = require('socket.io');
 const { name, version } = require('./package.json');
-const { buildGame } = require('./data.js');
+const { ROUNDS, buildGame } = require('./data.js');
 
 const PORT = Number(process.env.PORT) || 3000;
-const ROUNDS_PER_GAME = 5;
+const DEFAULT_QUESTION_COUNT = 15;
+const DEFAULT_HELPER_COUNT = 3;
 const ROUND_TIME_SECONDS = 15;
 const NEXT_ROUND_DELAY_MS = 4500;
 const NICKNAME_MAX_LENGTH = 24;
@@ -129,6 +130,22 @@ function createServer() {
     return Math.max(0, Math.min(50, Math.round((50 * (14 - elapsed)) / 13)));
   }
 
+  function parseQuestionCount(value) {
+    const n = Number(value);
+    if (!Number.isInteger(n) || n < 1 || n > ROUNDS.length) {
+      return null;
+    }
+    return n;
+  }
+
+  function parseHelperCount(value) {
+    const n = Number(value);
+    if (!Number.isInteger(n) || n < 0 || n > 3) {
+      return null;
+    }
+    return n;
+  }
+
   function startRound(code) {
     const room = rooms.get(code);
     if (room?.status !== 'in-progress') {
@@ -153,7 +170,8 @@ function createServer() {
       index: room.currentRoundIndex,
       total: room.rounds.length,
       category: currentRound.category,
-      options: currentRound.options.map((option) => ({ word: option.word }))
+      hint: currentRound.hint,
+      options: currentRound.options.map((option) => ({ word: option.word, fake: option.fake }))
     });
 
     io.to(code).emit('timer-tick', room.roundState.timerValue);
@@ -367,6 +385,8 @@ function createServer() {
         status: 'waiting',
         players: [player],
         rounds: [],
+        questionCount: Math.min(DEFAULT_QUESTION_COUNT, ROUNDS.length),
+        helperCount: DEFAULT_HELPER_COUNT,
         currentRoundIndex: 0,
         roundState: null,
         nextRoundTimeout: null,
@@ -377,7 +397,12 @@ function createServer() {
       socketRoom.set(socket.id, code);
       socket.join(code);
 
-      respond({ code, players: room.players });
+      respond({
+        code,
+        players: room.players,
+        questionCount: room.questionCount,
+        helperCount: room.helperCount
+      });
     });
 
     socket.on('join-room', (payload, ack) => {
@@ -419,8 +444,54 @@ function createServer() {
       socketRoom.set(socket.id, code);
       socket.join(code);
 
-      respond({ code, host: getHostId(room), players: room.players });
+      respond({
+        code,
+        host: getHostId(room),
+        players: room.players,
+        questionCount: room.questionCount,
+        helperCount: room.helperCount
+      });
       socket.to(code).emit('player-joined', { players: room.players });
+    });
+
+    socket.on('update-room-config', (payload, ack) => {
+      const body = payload || {};
+      const respond = typeof ack === 'function' ? ack : () => {};
+      const room = getRoomForSocket(socket.id);
+      if (!room) {
+        respond({});
+        return;
+      }
+
+      const me = room.players.find((player) => player.id === socket.id);
+      if (!me?.isHost) {
+        respond({ error: 'Only the host can update room config' });
+        return;
+      }
+      if (room.status !== 'waiting') {
+        respond({ error: 'Room config can only be changed in waiting room' });
+        return;
+      }
+
+      const questionCount = parseQuestionCount(body.questionCount);
+      const helperCount = parseHelperCount(body.helperCount);
+      if (questionCount === null) {
+        respond({ error: `questionCount must be an integer between 1 and ${ROUNDS.length}` });
+        return;
+      }
+      if (helperCount === null) {
+        respond({ error: 'helperCount must be an integer between 0 and 3' });
+        return;
+      }
+
+      room.questionCount = questionCount;
+      room.helperCount = helperCount;
+      io.to(room.code).emit('room-config-updated', {
+        questionCount: room.questionCount,
+        helperCount: room.helperCount
+      });
+
+      respond({});
     });
 
     socket.on('leave-room', () => {
@@ -445,7 +516,8 @@ function createServer() {
       destroyRoom(room.code);
     });
 
-    socket.on('start-game', (_payload, ack) => {
+    socket.on('start-game', (payload, ack) => {
+      const body = payload || {};
       const respond = typeof ack === 'function' ? ack : () => {};
       const room = getRoomForSocket(socket.id);
       if (!room) {
@@ -466,11 +538,27 @@ function createServer() {
         return;
       }
 
+      const questionCount = parseQuestionCount(body.questionCount);
+      const helperCount = parseHelperCount(body.helperCount);
+      if (questionCount === null) {
+        respond({ error: `questionCount must be an integer between 1 and ${ROUNDS.length}` });
+        return;
+      }
+      if (helperCount === null) {
+        respond({ error: 'helperCount must be an integer between 0 and 3' });
+        return;
+      }
+
       clearRoomTimers(room);
       resetRoomForNewGame(room);
-      room.rounds = buildGame(ROUNDS_PER_GAME);
+      room.questionCount = questionCount;
+      room.helperCount = helperCount;
+      room.rounds = buildGame(room.questionCount);
 
-      io.to(room.code).emit('game-started', { totalRounds: room.rounds.length });
+      io.to(room.code).emit('game-started', {
+        totalRounds: room.rounds.length,
+        helperCount: room.helperCount
+      });
       respond({});
       startRound(room.code);
     });
@@ -525,14 +613,18 @@ function createServer() {
       room.players.forEach((player) => {
         player.score = 0;
       });
-      room.rounds = buildGame(ROUNDS_PER_GAME);
+      room.rounds = [];
       room.currentRoundIndex = 0;
       room.roundState = null;
       room.status = 'waiting';
       room.nextRoundTimeout = null;
       room.canPlayAgain = false;
 
-      io.to(room.code).emit('back-to-lobby', { players: room.players });
+      io.to(room.code).emit('back-to-lobby', {
+        players: room.players,
+        questionCount: room.questionCount,
+        helperCount: room.helperCount
+      });
       respond({});
     });
 

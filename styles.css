@@ -407,6 +407,12 @@ body {
 
 .option:disabled { cursor: default; }
 
+.option.option--disabled {
+  opacity: 0.35;
+  border-color: var(--border);
+  filter: grayscale(1);
+}
+
 .option.correct {
   border-color: var(--success);
   background: rgba(74, 222, 128, 0.1);
@@ -477,6 +483,79 @@ body {
   font-size: 13px;
   color: var(--text-dim);
   line-height: 1.5;
+}
+
+.helper-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.helper-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.helper-btn:hover:not(:disabled) {
+  border-color: var(--accent-3);
+}
+
+.helper-btn.helper-btn--spent {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.helper-btn.helper-btn--hidden {
+  display: none;
+}
+
+.helper-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.round-hint {
+  display: none;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.round-hint.visible {
+  display: block;
+}
+
+.guilleai-panel {
+  margin-top: 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(167, 139, 250, 0.08);
+}
+
+.guilleai-message {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.btn-guilleai-dismiss {
+  padding: 8px 14px;
+  font-size: 13px;
 }
 
 .btn-next {
@@ -593,6 +672,7 @@ body {
   .stat-value { font-size: 16px; }
   .intro-card, .results-card { padding: 32px 24px; }
   .how-grid { grid-template-columns: 1fr; }
+  .game-config { grid-template-columns: 1fr; }
   .options { grid-template-columns: 1fr; }
   .option { padding: 20px 18px; font-size: 18px; }
   .feedback { flex-direction: column; align-items: flex-start; text-align: left; }
@@ -608,6 +688,44 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+}
+
+.game-config {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.config-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: left;
+}
+
+.config-field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.config-field input {
+  width: 100%;
+  background: var(--bg-1);
+  border: 1.5px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  color: var(--text);
+  outline: none;
+}
+
+.config-field input:focus {
+  border-color: var(--accent);
 }
 .btn-secondary {
   background: transparent;
@@ -791,6 +909,30 @@ body {
   font-size: 13px;
   color: var(--text-muted);
   margin-bottom: 24px;
+}
+
+.waiting-config {
+  margin-bottom: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.waiting-config-host {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.waiting-config-guest {
+  display: flex;
+  justify-content: center;
+}
+
+.waiting-config-summary {
+  font-size: 14px;
+  color: var(--text-dim);
 }
 
 .players-list {
@@ -1090,6 +1232,7 @@ body {
   .lobby-card, .waiting-card, .podium-card { padding: 32px 20px; }
   .room-code-value { font-size: 28px; }
   .join-form { flex-direction: column; }
+  .waiting-config-host { grid-template-columns: 1fr; }
   .podium-stands { gap: 6px; }
   .podium-place { width: 90px; }
   .timer-ring { width: 60px; height: 60px; }

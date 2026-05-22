@@ -1,7 +1,8 @@
 (() => {
   'use strict';
 
-  const TOTAL_ROUNDS = 10;
+  const DEFAULT_QUESTION_COUNT = 15;
+  const DEFAULT_HELPER_COUNT = 3;
   const POINTS_CORRECT = 100;
   const STREAK_BONUS = 25; // per streak level beyond first
 
@@ -13,7 +14,11 @@
     streak: 0,
     bestStreak: 0,
     correct: 0,
-    answered: false
+    answered: false,
+    hintRevealed: false,
+    guilleAiConfidence: null,
+    guilleAiWord: '',
+    helperCount: DEFAULT_HELPER_COUNT
   };
 
   // ===== ELEMENTS =====
@@ -38,9 +43,19 @@
     feedbackIcon: document.getElementById('feedback-icon'),
     feedbackTitle:document.getElementById('feedback-title'),
     feedbackDetail:document.getElementById('feedback-detail'),
+    roundHint:     document.getElementById('round-hint'),
     btnStart:     document.getElementById('btn-start'),
     btnNext:      document.getElementById('btn-next'),
     btnRestart:   document.getElementById('btn-restart'),
+    soloQuestionCount: document.getElementById('solo-question-count'),
+    soloHelperCount: document.getElementById('solo-helper-count'),
+    helperBar:    document.getElementById('helper-bar'),
+    helper50:     document.getElementById('helper-50-50'),
+    helperGuilleAi: document.getElementById('helper-guilleai'),
+    helperExtraHint: document.getElementById('helper-extra-hint'),
+    guilleAiPanel: document.getElementById('guilleai-panel'),
+    guilleAiMessage: document.getElementById('guilleai-message'),
+    btnDismissGuilleAi: document.getElementById('btn-guilleai-dismiss'),
     finalScore:   document.getElementById('final-score'),
     finalCorrect: document.getElementById('final-correct'),
     finalStreak:  document.getElementById('final-streak'),
@@ -50,7 +65,79 @@
     trophy:       document.getElementById('trophy')
   };
 
+  const helperButtons = {
+    'extra-hint': el.helperExtraHint,
+    '50-50': el.helper50,
+    guilleai: el.helperGuilleAi
+  };
+
   // ===== HELPERS =====
+  function clampInt(value, min, max, fallback) {
+    const n = Number(value);
+    if (!Number.isInteger(n)) return fallback;
+    return Math.max(min, Math.min(max, n));
+  }
+
+  function hideGuilleAiPanel() {
+    el.guilleAiPanel.style.display = 'none';
+  }
+
+  function showGuilleAiPanel() {
+    el.guilleAiPanel.style.display = '';
+  }
+
+  function setRoundHint(text, visible) {
+    el.roundHint.textContent = text;
+    el.roundHint.classList.toggle('visible', Boolean(visible));
+  }
+
+  function syncConfigBounds() {
+    const hasRounds = typeof ROUNDS !== 'undefined' && Array.isArray(ROUNDS);
+    const maxRounds = hasRounds ? ROUNDS.length : DEFAULT_QUESTION_COUNT;
+    const defaultQuestions = Math.min(DEFAULT_QUESTION_COUNT, maxRounds);
+    el.soloQuestionCount.max = String(maxRounds);
+    el.soloQuestionCount.value = String(clampInt(el.soloQuestionCount.value, 1, maxRounds, defaultQuestions));
+    el.soloHelperCount.value = String(clampInt(el.soloHelperCount.value, 0, 3, DEFAULT_HELPER_COUNT));
+  }
+
+  function readSoloConfig() {
+    const hasRounds = typeof ROUNDS !== 'undefined' && Array.isArray(ROUNDS);
+    const maxRounds = hasRounds ? ROUNDS.length : DEFAULT_QUESTION_COUNT;
+    const defaultQuestions = Math.min(DEFAULT_QUESTION_COUNT, maxRounds);
+    const questionCount = clampInt(el.soloQuestionCount.value, 1, maxRounds, defaultQuestions);
+    const helperCount = clampInt(el.soloHelperCount.value, 0, 3, DEFAULT_HELPER_COUNT);
+    el.soloQuestionCount.value = String(questionCount);
+    el.soloHelperCount.value = String(helperCount);
+    return { questionCount, helperCount };
+  }
+
+  function updateHelperButtons(locked) {
+    if (!window.Helpers) {
+      el.helperBar.style.display = 'none';
+      return;
+    }
+
+    const activeTypes = window.Helpers.getActiveTypes();
+    el.helperBar.style.display = activeTypes.length ? 'flex' : 'none';
+
+    Object.entries(helperButtons).forEach(([typeKey, button]) => {
+      const isActive = activeTypes.includes(typeKey);
+      const isSpent = window.Helpers.isSpent(typeKey);
+
+      button.classList.toggle('helper-btn--hidden', !isActive);
+      button.classList.toggle('helper-btn--spent', isSpent);
+      button.disabled = !isActive || isSpent || Boolean(locked);
+    });
+  }
+
+  function resetRoundHelperState() {
+    state.hintRevealed = false;
+    state.guilleAiConfidence = null;
+    state.guilleAiWord = '';
+    setRoundHint('', false);
+    hideGuilleAiPanel();
+  }
+
   function showScreen(name) {
     Object.values(el.screens).forEach(s => s.classList.remove('active'));
     el.screens[name].classList.add('active');
@@ -80,6 +167,7 @@
   function renderRound() {
     const round = state.rounds[state.index];
     state.answered = false;
+    resetRoundHelperState();
     el.categoryTag.textContent = round.category;
     el.feedback.classList.remove('visible', 'correct', 'incorrect');
     el.options.innerHTML = '';
@@ -97,12 +185,14 @@
       el.options.appendChild(btn);
     });
 
+    updateHelperButtons(false);
     updateHud();
   }
 
   function onAnswer(button, option) {
-    if (state.answered) return;
+    if (state.answered || button.disabled || button.classList.contains('option--disabled')) return;
     state.answered = true;
+    updateHelperButtons(true);
 
     const buttons = el.options.querySelectorAll('.option');
     buttons.forEach(b => {
@@ -110,7 +200,7 @@
       const isFake = b.dataset.fake === 'true';
       if (isFake) b.classList.add('correct');
       else if (b === button) b.classList.add('incorrect');
-      else b.classList.add('dimmed');
+      else if (!b.classList.contains('option--disabled')) b.classList.add('dimmed');
     });
 
     const wasCorrect = option.fake;
@@ -140,6 +230,9 @@
     }
 
     el.feedbackDetail.textContent = round.hint;
+    if (!state.hintRevealed) {
+      setRoundHint('', false);
+    }
     updateHud();
 
     el.btnNext.textContent =
@@ -167,6 +260,7 @@
 
   function showResults() {
     el.progressFill.style.width = '100%';
+    hideGuilleAiPanel();
     const r = rankFor(state.score, state.correct, state.rounds.length);
     el.finalCorrect.textContent = `${state.correct}/${state.rounds.length}`;
     el.finalStreak.textContent = state.bestStreak;
@@ -179,13 +273,67 @@
     animateValue(el.finalScore, 0, state.score, 1100);
   }
 
+  function activateFiftyFifty() {
+    if (window.isMultiplayerMode?.()) return;
+    if (state.answered || !window.Helpers?.canActivate('50-50')) return;
+
+    const nonFakeButtons = [...el.options.querySelectorAll('.option')]
+      .filter((btn) => btn.dataset.fake !== 'true' && !btn.classList.contains('option--disabled'));
+
+    const shuffled = nonFakeButtons.toSorted(() => Math.random() - 0.5);
+    const toDisable = shuffled.slice(0, 2);
+    toDisable.forEach((btn) => {
+      btn.classList.add('option--disabled');
+      btn.disabled = true;
+    });
+
+    window.Helpers.markSpent('50-50');
+    updateHelperButtons(false);
+  }
+
+  function activateGuilleAi() {
+    if (window.isMultiplayerMode?.()) return;
+    if (state.answered || !window.Helpers?.canActivate('guilleai')) return;
+
+    const round = state.rounds[state.index];
+    const fake = round.options.find((opt) => opt.fake);
+    if (!fake) return;
+
+    state.guilleAiWord = fake.word;
+    state.guilleAiConfidence = Math.floor(Math.random() * 31) + 65;
+
+    el.guilleAiMessage.textContent = `GuilleAI analysed the category and is ${state.guilleAiConfidence}% confident that "${state.guilleAiWord}" is the impostor.`;
+    showGuilleAiPanel();
+
+    window.Helpers.markSpent('guilleai');
+    updateHelperButtons(false);
+  }
+
+  function activateExtraHint() {
+    if (window.isMultiplayerMode?.()) return;
+    if (state.answered || !window.Helpers?.canActivate('extra-hint')) return;
+
+    const round = state.rounds[state.index];
+    state.hintRevealed = true;
+    setRoundHint(round.hint, true);
+    window.Helpers.markSpent('extra-hint');
+    updateHelperButtons(false);
+  }
+
   function startGame() {
-    state.rounds = buildGame(TOTAL_ROUNDS);
+    syncConfigBounds();
+    const { questionCount, helperCount } = readSoloConfig();
+
+    window.Helpers?.reset();
+    window.Helpers?.init(helperCount);
+
+    state.rounds = buildGame(questionCount);
     state.index = 0;
     state.score = 0;
     state.streak = 0;
     state.bestStreak = 0;
     state.correct = 0;
+    state.helperCount = helperCount;
     el.score.textContent = '0';
     // Hide multiplayer-only UI
     document.getElementById('timer-ring').style.display = 'none';
@@ -197,13 +345,18 @@
   }
 
   // ===== EVENTS =====
+  syncConfigBounds();
   el.btnStart.addEventListener('click', startGame);
   el.btnRestart.addEventListener('click', startGame);
   el.btnNext.addEventListener('click', nextRound);
+  el.helper50.addEventListener('click', activateFiftyFifty);
+  el.helperGuilleAi.addEventListener('click', activateGuilleAi);
+  el.helperExtraHint.addEventListener('click', activateExtraHint);
+  el.btnDismissGuilleAi.addEventListener('click', hideGuilleAiPanel);
 
   // Keyboard support: A/B/C/D and Enter (solo mode only)
   document.addEventListener('keydown', (e) => {
-    if (window.isMultiplayerMode && window.isMultiplayerMode()) return;
+    if (window.isMultiplayerMode?.()) return;
     if (!el.screens.game.classList.contains('active')) return;
     const key = e.key.toLowerCase();
     if (['a','b','c','d','1','2','3','4'].includes(key)) {

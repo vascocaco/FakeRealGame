@@ -120,12 +120,103 @@ const ROUNDS = [
       { word: "Brevitato", fake: true  }
     ],
     hint: "“Brevitato” is invented (though a “breve” is real). An affogato is espresso poured over ice cream."
+  },
+  {
+    category: "Ancient Civilizations",
+    options: [
+      { word: "Sumerians", fake: false },
+      { word: "Olmecs",    fake: false },
+      { word: "Hittites",  fake: false },
+      { word: "Laruthians",fake: true  }
+    ],
+    hint: "“Laruthians” is made up. The Hittites were a major Bronze Age power in Anatolia."
+  },
+  {
+    category: "Planetary Moons",
+    options: [
+      { word: "Europa",   fake: false },
+      { word: "Titan",    fake: false },
+      { word: "Nereid",   fake: false },
+      { word: "Caldora",  fake: true  }
+    ],
+    hint: "“Caldora” is fake. Nereid is a real moon of Neptune with a highly eccentric orbit."
+  },
+  {
+    category: "Typography Terms",
+    options: [
+      { word: "Kerning",   fake: false },
+      { word: "Ligature",  fake: false },
+      { word: "Leading",   fake: false },
+      { word: "Glyphline", fake: true  }
+    ],
+    hint: "“Glyphline” was invented. Leading controls vertical spacing between lines of text."
+  },
+  {
+    category: "Board Games",
+    options: [
+      { word: "Carcassonne", fake: false },
+      { word: "Azul",        fake: false },
+      { word: "Catan",       fake: false },
+      { word: "Port RoyaleX",fake: true  }
+    ],
+    hint: "“Port RoyaleX” is fake. Azul is the tile-drafting game inspired by Portuguese ceramics."
+  },
+  {
+    category: "Classical Composers",
+    options: [
+      { word: "Debussy",   fake: false },
+      { word: "Ravel",     fake: false },
+      { word: "Sibelius",  fake: false },
+      { word: "Morvinsky", fake: true  }
+    ],
+    hint: "“Morvinsky” is invented. Sibelius is known for his symphonies and Finnish nationalist tone poems."
+  },
+  {
+    category: "Cloud Types",
+    options: [
+      { word: "Cirrus",    fake: false },
+      { word: "Stratus",   fake: false },
+      { word: "Cumulus",   fake: false },
+      { word: "Fractuson", fake: true  }
+    ],
+    hint: "“Fractuson” is fake. Cirrus clouds are high-altitude and often look wispy."
+  },
+  {
+    category: "Norse Mythology",
+    options: [
+      { word: "Bifrost",   fake: false },
+      { word: "Yggdrasil", fake: false },
+      { word: "Fenrir",    fake: false },
+      { word: "Helmora",   fake: true  }
+    ],
+    hint: "“Helmora” is fake. Fenrir is the giant wolf prophesied to play a role in Ragnarok."
+  },
+  {
+    category: "Marine Animals",
+    options: [
+      { word: "Nudibranch", fake: false },
+      { word: "Manta ray",  fake: false },
+      { word: "Lionfish",   fake: false },
+      { word: "Glasswhale", fake: true  }
+    ],
+    hint: "“Glasswhale” is invented. Nudibranchs are colorful sea slugs with remarkable forms."
+  },
+  {
+    category: "Art Movements",
+    options: [
+      { word: "Cubism",      fake: false },
+      { word: "Surrealism",  fake: false },
+      { word: "Fauvism",     fake: false },
+      { word: "LuminarismX", fake: true  }
+    ],
+    hint: "“LuminarismX” is fake. Fauvism featured vivid, non-naturalistic color choices."
   }
 ];
 
 // Pick N rounds at random and shuffle their options
-function buildGame(n = 10) {
-  const shuffled = [...ROUNDS].sort(() => Math.random() - 0.5).slice(0, n);
+function buildGame(n = 15) {
+  const targetRounds = Math.max(1, Math.min(Number(n) || 15, ROUNDS.length));
+  const shuffled = [...ROUNDS].sort(() => Math.random() - 0.5).slice(0, targetRounds);
   return shuffled.map(r => ({
     ...r,
     options: [...r.options].sort(() => Math.random() - 0.5)

@@ -60,6 +60,16 @@
             <div class="how-text"><strong>Score</strong> points & build your streak.</div>
           </div>
         </div>
+        <div class="game-config" id="solo-config-panel">
+          <div class="config-field">
+            <label for="solo-question-count">Questions</label>
+            <input type="number" id="solo-question-count" min="1" max="21" value="15" />
+          </div>
+          <div class="config-field">
+            <label for="solo-helper-count">Helpers</label>
+            <input type="number" id="solo-helper-count" min="0" max="3" value="3" />
+          </div>
+        </div>
         <div class="intro-buttons">
           <button class="btn-primary" id="btn-multiplayer">
             <span>Multiplayer</span>
@@ -107,6 +117,19 @@
           <button class="btn-copy" id="btn-copy-code" title="Copy code">📋</button>
         </div>
         <p class="waiting-subtitle">Share this code with friends to join</p>
+        <div class="waiting-config waiting-config-host" id="waiting-config-host" style="display:none">
+          <div class="config-field">
+            <label for="waiting-question-count">Questions</label>
+            <input type="number" id="waiting-question-count" min="1" max="21" value="15" />
+          </div>
+          <div class="config-field">
+            <label for="waiting-helper-count">Helpers</label>
+            <input type="number" id="waiting-helper-count" min="0" max="3" value="3" />
+          </div>
+        </div>
+        <div class="waiting-config waiting-config-guest" id="waiting-config-guest" style="display:none">
+          <p class="waiting-config-summary" id="waiting-config-summary">15 questions, 3 helpers</p>
+        </div>
         <div class="players-list" id="players-list"></div>
         <div class="waiting-actions">
           <button class="btn-primary" id="btn-start-game" style="display:none">
@@ -138,7 +161,14 @@
       <div class="category-tag" id="category-tag">Category</div>
       <h2 class="question">Which one is <span class="fake-word">fake</span>?</h2>
 
+      <div class="helper-bar" id="helper-bar">
+        <button class="helper-btn" id="helper-extra-hint" data-helper-type="extra-hint" type="button">Extra Hint</button>
+        <button class="helper-btn" id="helper-50-50" data-helper-type="50-50" type="button">50/50</button>
+        <button class="helper-btn" id="helper-guilleai" data-helper-type="guilleai" type="button">GuilleAI</button>
+      </div>
+
       <div class="options" id="options"></div>
+      <div class="round-hint" id="round-hint"></div>
 
       <!-- Waiting indicator (multiplayer) -->
       <div class="waiting-indicator" id="waiting-indicator" style="display:none">
@@ -159,6 +189,11 @@
       <div class="game-leaderboard" id="game-leaderboard" style="display:none">
         <h3 class="lb-title">Leaderboard</h3>
         <ol class="lb-list" id="lb-list"></ol>
+      </div>
+
+      <div class="guilleai-panel" id="guilleai-panel" style="display:none">
+        <p class="guilleai-message" id="guilleai-message"></p>
+        <button class="btn-secondary btn-guilleai-dismiss" id="btn-guilleai-dismiss" type="button">Dismiss</button>
       </div>
     </section>
 
@@ -254,6 +289,7 @@
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="data.js"></script>
+  <script src="helpers.js"></script>
   <script src="app.js"></script>
   <script src="lobby.js"></script>
   <script src="multiplayer.js"></script>

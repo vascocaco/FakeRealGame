@@ -34,8 +34,20 @@ Open two or more browser windows at that address and click **Multiplayer** to cr
 
 ## How to Play
 
-1. **Solo**: Click **Solo Play** on the intro screen. Each round shows a category and four words — pick the fake one before time runs out.
-2. **Multiplayer**: One player creates a room and shares the 6-character code. Others join with that code. The host starts the game when everyone is ready. All players see the same rounds simultaneously with a shared 15-second countdown. Scores accumulate across 5 rounds; a podium is shown at the end.
+1. **Solo**: Click **Solo Play** on the intro screen. Configure the number of questions (default: 15) and helpers (default: 3), then start. Each round shows a category and four words — pick the fake one.
+2. **Multiplayer**: One player creates a room and shares the 6-character code. Others join with that code. The host sets the question count and helper count, then starts the game. All players see the same rounds simultaneously with a shared 15-second countdown. Scores accumulate across all rounds; a podium is shown at the end.
+
+### Helpers / Lifelines
+
+Each player starts with up to three one-use helpers per game. Helpers cannot be activated after submitting an answer for the current round.
+
+| Helper | What it does |
+|--------|-------------|
+| **Extra Hint** | Reveals the round's teaching hint immediately, before you answer. |
+| **50/50** | Eliminates two of the three non-fake options at random, leaving the fake and one decoy selectable. |
+| **GuilleAI Expert Help** | Opens a panel identifying the fake word with a confidence score (65–95%). GuilleAI is always correct. |
+
+In multiplayer, helpers are per-player — using one does not affect other players' helper supply or game view. The host configures the helper count for all players before the game starts; guests see the setting as read-only in the waiting room.
 
 ---
 
@@ -45,18 +57,20 @@ Open two or more browser windows at that address and click **Multiplayer** to cr
 |---|---|
 | `index.html` | Single-page app — all screens (intro, lobby, waiting, game, results, podium) |
 | `styles.css` | All styling; uses CSS custom properties for theming |
-| `data.js` | `ROUNDS` array (12 trivia rounds) and `buildGame(n)` function; dual-export (browser global + `module.exports`) |
-| `app.js` | Solo game logic (IIFE) |
-| `lobby.js` | Multiplayer lobby UI and Socket.io room management |
-| `multiplayer.js` | Multiplayer in-game logic; reads `window.gameSocket` set by `lobby.js` |
-| `server.js` | Node.js + Socket.io server for multiplayer; serves static files |
+| `data.js` | `ROUNDS` array (21 trivia rounds) and `buildGame(n)` function; dual-export (browser global + `module.exports`) |
+| `helpers.js` | Shared helper/lifeline state module (`window.Helpers`); tracks active types and spent state |
+| `app.js` | Solo game logic (IIFE); includes helper activation logic |
+| `lobby.js` | Multiplayer lobby UI and Socket.io room management; sends question/helper config on game start |
+| `multiplayer.js` | Multiplayer in-game logic; reads `window.gameSocket` set by `lobby.js`; includes helper activation logic |
+| `server.js` | Node.js + Socket.io server for multiplayer; validates config, constructs game, serves static files |
 | `package.json` | Runtime dependencies (`express`, `socket.io`) and `npm start` script |
 
 ---
 
-## Multiplayer Feature
+## Feature Documentation
 
-See [docs/features/multiplayer.md](docs/features/multiplayer.md) for a full description of the multiplayer system: room lifecycle, game flow, scoring rules, Socket.io event reference, and known limitations.
+- [Multiplayer](docs/features/multiplayer.md) — room lifecycle, game flow, scoring rules, Socket.io event reference, and known limitations.
+- [Quiz Helpers / Lifelines](docs/features/quiz-helpers-lifelines.md) — 50/50, GuilleAI Expert Help, and Extra Hint; configuration for solo and multiplayer; helper state management.
 
 ---
 
