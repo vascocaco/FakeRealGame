@@ -60,6 +60,24 @@ See [docs/features/multiplayer.md](docs/features/multiplayer.md) for a full desc
 
 ---
 
+## Public Deployment
+
+This repository is prepared for deployment to Render using the root `render.yaml` blueprint and the server health check at `/health`.
+
+- **Live URL**: Not available yet. Render will assign the public HTTPS URL during the first successful deploy.
+- **How to play on the web**: Open the Render URL in a browser, choose **Multiplayer**, then create a room or join one with a 6-character code shared by the host.
+- **Deployment note**: The only remaining manual step is creating the Render Web Service and connecting this repository in the Render dashboard.
+
+### First-release limitations
+
+- **Free-tier idle sleep**: After about 15 minutes with no traffic, the service may pause. The first request after idle can take 30-60 seconds while the app wakes up.
+- **Single instance**: All players share one Node.js server instance. Horizontal scaling is not configured for this release.
+- **No session persistence**: If the server restarts, all active rooms are lost and players must create new rooms.
+
+See [docs/features/public-deployment.md](docs/features/public-deployment.md) for the full deployment guide, including remaining manual steps and the health endpoint reference.
+
+---
+
 ## Development Notes
 
 - **No build step.** Changes to any `.js`, `.css`, or `.html` file take effect on browser reload.

@@ -2,6 +2,7 @@ const path = require('path');
 const http = require('http');
 const express = require('express');
 const { Server } = require('socket.io');
+const { name, version } = require('./package.json');
 const { buildGame } = require('./data.js');
 
 const PORT = Number(process.env.PORT) || 3000;
@@ -20,6 +21,15 @@ function createServer() {
   // In-memory room store keyed by room code.
   const rooms = new Map();
   const socketRoom = new Map();
+
+  app.get('/health', (_req, res) => {
+    res.status(200).json({
+      name,
+      version,
+      uptimeSeconds: Math.floor(process.uptime()),
+      timestamp: new Date().toISOString()
+    });
+  });
 
   app.use(express.static(path.resolve(__dirname)));
 
