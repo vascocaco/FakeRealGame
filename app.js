@@ -20,8 +20,11 @@
   const el = {
     screens: {
       intro:   document.getElementById('screen-intro'),
+      lobby:   document.getElementById('screen-lobby'),
+      waiting: document.getElementById('screen-waiting'),
       game:    document.getElementById('screen-game'),
-      results: document.getElementById('screen-results')
+      results: document.getElementById('screen-results'),
+      podium:  document.getElementById('screen-podium')
     },
     score:        document.getElementById('score'),
     streak:       document.getElementById('streak'),
@@ -184,6 +187,11 @@
     state.bestStreak = 0;
     state.correct = 0;
     el.score.textContent = '0';
+    // Hide multiplayer-only UI
+    document.getElementById('timer-ring').style.display = 'none';
+    document.getElementById('game-leaderboard').style.display = 'none';
+    document.getElementById('waiting-indicator').style.display = 'none';
+    el.btnNext.style.display = '';
     showScreen('game');
     renderRound();
   }
@@ -193,8 +201,9 @@
   el.btnRestart.addEventListener('click', startGame);
   el.btnNext.addEventListener('click', nextRound);
 
-  // Keyboard support: A/B/C/D and Enter
+  // Keyboard support: A/B/C/D and Enter (solo mode only)
   document.addEventListener('keydown', (e) => {
+    if (window.isMultiplayerMode && window.isMultiplayerMode()) return;
     if (!el.screens.game.classList.contains('active')) return;
     const key = e.key.toLowerCase();
     if (['a','b','c','d','1','2','3','4'].includes(key)) {
