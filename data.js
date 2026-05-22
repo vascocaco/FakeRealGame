@@ -131,3 +131,8 @@ function buildGame(n = 10) {
     options: [...r.options].sort(() => Math.random() - 0.5)
   }));
 }
+
+// Support Node.js require (server) while keeping browser globals
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { ROUNDS, buildGame };
+}

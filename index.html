@@ -60,10 +60,63 @@
             <div class="how-text"><strong>Score</strong> points & build your streak.</div>
           </div>
         </div>
-        <button class="btn-primary" id="btn-start">
-          <span>Start Playing</span>
-          <span class="btn-arrow">→</span>
-        </button>
+        <div class="intro-buttons">
+          <button class="btn-primary" id="btn-multiplayer">
+            <span>Multiplayer</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <button class="btn-secondary" id="btn-start">
+            <span>Solo Practice</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOBBY SCREEN -->
+    <section class="screen screen-lobby" id="screen-lobby">
+      <div class="lobby-card">
+        <h2 class="lobby-title">Multiplayer <span class="gradient-text">Lobby</span></h2>
+        <div class="lobby-nickname">
+          <label for="nickname-input">Your Nickname</label>
+          <input type="text" id="nickname-input" maxlength="15" placeholder="Enter your name..." autocomplete="off" />
+        </div>
+        <div class="lobby-actions">
+          <button class="btn-primary" id="btn-create-room">
+            <span>Create Room</span>
+            <span class="btn-arrow">+</span>
+          </button>
+          <div class="lobby-divider"><span>or</span></div>
+          <div class="join-form">
+            <input type="text" id="room-code-input" maxlength="6" placeholder="ROOM CODE" autocomplete="off" />
+            <button class="btn-primary btn-join" id="btn-join-room">
+              <span>Join</span>
+            </button>
+          </div>
+        </div>
+        <div class="lobby-error" id="lobby-error"></div>
+        <button class="btn-back" id="btn-back-intro">← Back</button>
+      </div>
+    </section>
+
+    <!-- WAITING ROOM SCREEN -->
+    <section class="screen screen-waiting" id="screen-waiting">
+      <div class="waiting-card">
+        <h2 class="waiting-title">Room</h2>
+        <div class="room-code-display" id="room-code-display">
+          <span class="room-code-value" id="room-code-value">------</span>
+          <button class="btn-copy" id="btn-copy-code" title="Copy code">📋</button>
+        </div>
+        <p class="waiting-subtitle">Share this code with friends to join</p>
+        <div class="players-list" id="players-list"></div>
+        <div class="waiting-actions">
+          <button class="btn-primary" id="btn-start-game" style="display:none">
+            <span>Start Game</span>
+            <span class="btn-arrow">▶</span>
+          </button>
+          <p class="waiting-hint" id="waiting-hint">Waiting for host to start...</p>
+          <button class="btn-danger" id="btn-close-room" style="display:none">Close Room</button>
+          <button class="btn-back" id="btn-leave-room">← Leave Room</button>
+        </div>
       </div>
     </section>
 
@@ -73,10 +126,25 @@
         <div class="progress-fill" id="progress-fill"></div>
       </div>
 
+      <!-- Timer (multiplayer) -->
+      <div class="timer-ring" id="timer-ring" style="display:none">
+        <svg class="timer-svg" viewBox="0 0 100 100">
+          <circle class="timer-track" cx="50" cy="50" r="45"/>
+          <circle class="timer-fill" id="timer-fill" cx="50" cy="50" r="45"/>
+        </svg>
+        <span class="timer-text" id="timer-text">15</span>
+      </div>
+
       <div class="category-tag" id="category-tag">Category</div>
       <h2 class="question">Which one is <span class="fake-word">fake</span>?</h2>
 
       <div class="options" id="options"></div>
+
+      <!-- Waiting indicator (multiplayer) -->
+      <div class="waiting-indicator" id="waiting-indicator" style="display:none">
+        <span class="waiting-dots">⏳</span>
+        <span id="answer-progress-text">Waiting for others...</span>
+      </div>
 
       <div class="feedback" id="feedback">
         <div class="feedback-icon" id="feedback-icon"></div>
@@ -86,9 +154,15 @@
         </div>
         <button class="btn-next" id="btn-next">Next →</button>
       </div>
+
+      <!-- Leaderboard sidebar (multiplayer) -->
+      <div class="game-leaderboard" id="game-leaderboard" style="display:none">
+        <h3 class="lb-title">Leaderboard</h3>
+        <ol class="lb-list" id="lb-list"></ol>
+      </div>
     </section>
 
-    <!-- RESULTS SCREEN -->
+    <!-- RESULTS SCREEN (solo) -->
     <section class="screen screen-results" id="screen-results">
       <div class="results-card">
         <div class="trophy" id="trophy">🏆</div>
@@ -118,11 +192,70 @@
         </button>
       </div>
     </section>
+
+    <!-- PODIUM SCREEN (multiplayer) -->
+    <section class="screen screen-podium" id="screen-podium">
+      <div class="podium-card">
+        <!-- Loser reveal -->
+        <div class="loser-reveal" id="loser-reveal">
+          <h2 class="loser-title">And the crowd goes wild for...</h2>
+          <div class="loser-name" id="loser-name">???</div>
+          <p class="loser-subtitle">🎉👏 Better luck next time! 👏🎉</p>
+        </div>
+
+        <!-- Podium -->
+        <div class="podium-section" id="podium-section" style="display:none">
+          <h2 class="podium-title">🏆 The Podium</h2>
+          <div class="podium-stands">
+            <div class="podium-place place-2" id="podium-2">
+              <div class="podium-medal">🥈</div>
+              <div class="podium-player-name">---</div>
+              <div class="podium-player-score">0</div>
+              <div class="podium-bar bar-2"></div>
+            </div>
+            <div class="podium-place place-1" id="podium-1">
+              <div class="podium-medal">🥇</div>
+              <div class="podium-player-name">---</div>
+              <div class="podium-player-score">0</div>
+              <div class="podium-bar bar-1"></div>
+            </div>
+            <div class="podium-place place-3" id="podium-3">
+              <div class="podium-medal">🥉</div>
+              <div class="podium-player-name">---</div>
+              <div class="podium-player-score">0</div>
+              <div class="podium-bar bar-3"></div>
+            </div>
+          </div>
+
+          <!-- Full leaderboard -->
+          <div class="final-leaderboard">
+            <h3>Full Standings</h3>
+            <ol class="final-lb-list" id="final-lb-list"></ol>
+          </div>
+
+          <div class="podium-actions">
+            <button class="btn-primary" id="btn-play-again" style="display:none">
+              <span>Play Again</span>
+              <span class="btn-arrow">↻</span>
+            </button>
+            <button class="btn-back" id="btn-leave-podium">← Leave Room</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">Made with ♥ — pick wisely.</footer>
 
+  <!-- Audio -->
+  <audio id="crowd-cheer" preload="auto">
+    <source src="assets/crowd-cheer.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="/socket.io/socket.io.js"></script>
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <script src="lobby.js"></script>
+  <script src="multiplayer.js"></script>
 </body>
 </html>
