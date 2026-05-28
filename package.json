@@ -10,7 +10,7 @@
     "generate:questions": "python scripts/generate_questions_db.py",
     "validate:questions": "python scripts/validate_questions_db.py",
     "start": "set PORT=3001 && node server.js",
-    "test": "npm run validate:questions && python scripts/test_server_payloads.py && python scripts/validate_randomization.py && node scripts/test_scoring.js"
+    "test": "npm run validate:questions && python scripts/test_server_payloads.py && python scripts/test_multiplayer_helper_client.py && python scripts/validate_randomization.py && node scripts/test_scoring.js"
   },
   "repository": {
     "type": "git",

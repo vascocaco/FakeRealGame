@@ -71,6 +71,24 @@
     el.roundHint.classList.toggle('visible', Boolean(visible));
   }
 
+  function showHelperError(message) {
+    el.guilleAiMessage.textContent = message;
+    el.guilleAiPanel.style.display = '';
+  }
+
+  function requestHelper(type, onSuccess) {
+    updateHelperButtons(true);
+    socket.timeout(2500).emit('request-helper', { type }, (error, res) => {
+      if (error || res?.error) {
+        showHelperError(res?.error || 'Helper did not respond. If the server was already running, restart it and reload this page.');
+        updateHelperButtons(false);
+        return;
+      }
+
+      onSuccess(res || {});
+    });
+  }
+
   function formatRevealText(hint, evidence) {
     if (!evidence?.sourceName) {
       return hint || '';
@@ -123,9 +141,9 @@
   function activateFiftyFifty() {
     if (!multiplayerMode || hasAnswered || !currentRound || !window.Helpers?.canActivate('50-50')) return;
 
-    updateHelperButtons(true);
-    socket.emit('request-helper', { type: '50-50' }, (res) => {
-      if (res?.error || !Array.isArray(res.eliminateIndexes)) {
+    requestHelper('50-50', (res) => {
+      if (!Array.isArray(res.eliminateIndexes)) {
+        showHelperError('50/50 helper returned an invalid response.');
         updateHelperButtons(false);
         return;
       }
@@ -147,9 +165,9 @@
   function activateGuilleAi() {
     if (!multiplayerMode || hasAnswered || !currentRound || !window.Helpers?.canActivate('guilleai')) return;
 
-    updateHelperButtons(true);
-    socket.emit('request-helper', { type: 'guilleai' }, (res) => {
-      if (res?.error || !res.fakeWord) {
+    requestHelper('guilleai', (res) => {
+      if (!res.fakeWord) {
+        showHelperError('GuilleAI returned an invalid response.');
         updateHelperButtons(false);
         return;
       }
@@ -166,9 +184,9 @@
   function activateExtraHint() {
     if (!multiplayerMode || hasAnswered || !currentRound || !window.Helpers?.canActivate('extra-hint')) return;
 
-    updateHelperButtons(true);
-    socket.emit('request-helper', { type: 'extra-hint' }, (res) => {
-      if (res?.error || !res.hint) {
+    requestHelper('extra-hint', (res) => {
+      if (!res.hint) {
+        showHelperError('Extra Hint returned an invalid response.');
         updateHelperButtons(false);
         return;
       }
