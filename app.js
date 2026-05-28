@@ -92,6 +92,14 @@
     el.roundHint.classList.toggle('visible', Boolean(visible));
   }
 
+  function formatRevealText(round) {
+    if (!round?.evidence?.sourceName) {
+      return round?.hint || '';
+    }
+    const summary = round.evidence.summary ? ` ${round.evidence.summary}` : '';
+    return `${round.hint} Source: ${round.evidence.sourceName}.${summary}`;
+  }
+
   function syncConfigBounds() {
     const hasRounds = typeof ROUNDS !== 'undefined' && Array.isArray(ROUNDS);
     const maxRounds = hasRounds ? ROUNDS.length : DEFAULT_QUESTION_COUNT;
@@ -231,7 +239,7 @@
       el.feedbackTitle.textContent = `Not quite — the fake was “${fake.word}”`;
     }
 
-    el.feedbackDetail.textContent = round.hint;
+    el.feedbackDetail.textContent = formatRevealText(round);
     if (!state.hintRevealed) {
       setRoundHint('', false);
     }
@@ -319,7 +327,7 @@
 
     const round = state.rounds[state.index];
     state.hintRevealed = true;
-    setRoundHint(round.hint, true);
+    setRoundHint(formatRevealText(round), true);
     window.Helpers.markSpent('extra-hint');
     state.helperUsedThisRound = true;
     updateHelperButtons(false);

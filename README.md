@@ -57,7 +57,7 @@ In multiplayer, helpers are per-player — using one does not affect other playe
 |---|---|
 | `index.html` | Single-page app — all screens (intro, lobby, waiting, game, results, podium) |
 | `styles.css` | All styling; uses CSS custom properties for theming |
-| `data/questions.json` | JSON question database with 250 rounds across 25 categories |
+| `data/questions.json` | JSON question database with 300 rounds across 30 categories, including source-backed reveal evidence |
 | `data/questions-db.js` | Browser-ready mirror generated from the JSON database |
 | `data.js` | Loads the question database and exposes `ROUNDS`, `CATEGORIES`, and `buildGame(n)`; dual-export (browser global + `module.exports`) |
 | `helpers.js` | Shared helper/lifeline state module (`window.Helpers`); tracks active types and spent state |
@@ -71,7 +71,7 @@ In multiplayer, helpers are per-player — using one does not affect other playe
 
 ## Feature Documentation
 
-- [Multiplayer](docs/features/multiplayer.md) — room lifecycle, game flow, scoring rules, Socket.io event reference, and known limitations.
+- [Multiplayer](docs/features/multiplayer.md) — room lifecycle, game flow, scoring rules, Socket.io event reference, anti-cheat payload rules, and known limitations.
 - [Quiz Helpers / Lifelines](docs/features/quiz-helpers-lifelines.md) — 50/50, GuilleAI Expert Help, and Extra Hint; configuration for solo and multiplayer; helper state management.
 
 ---

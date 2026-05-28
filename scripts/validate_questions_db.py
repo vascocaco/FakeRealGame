@@ -24,6 +24,15 @@ def validate_question(question, index):
     if not isinstance(question.get("hint"), str) or len(question["hint"].strip()) < 20:
         ok = fail(f"{label}.hint must be a helpful string") and ok
 
+    evidence = question.get("evidence")
+    if not isinstance(evidence, dict):
+        ok = fail(f"{label}.evidence must be an object") and ok
+    else:
+        for field in ("sourceName", "sourceUrl", "summary"):
+            value = evidence.get(field)
+            if not isinstance(value, str) or not value.strip():
+                ok = fail(f"{label}.evidence.{field} must be a non-empty string") and ok
+
     options = question.get("options")
     if not isinstance(options, list) or len(options) != 4:
         return fail(f"{label}.options must contain exactly 4 options") and ok
@@ -74,8 +83,8 @@ def main():
     if not isinstance(questions, list):
         ok = fail("questions must be an array") and ok
     else:
-        if len(questions) != 250:
-            ok = fail(f"questions must contain exactly 250 entries, found {len(questions)}") and ok
+        if len(questions) != 300:
+            ok = fail(f"questions must contain exactly 300 entries, found {len(questions)}") and ok
         for index, question in enumerate(questions):
             ok = validate_question(question, index) and ok
 

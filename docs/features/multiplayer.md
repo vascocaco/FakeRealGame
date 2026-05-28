@@ -32,14 +32,14 @@ The server listens on `http://localhost:3000` (or `$PORT` if that environment va
 
 The host clicks **Start Game**. The server enforces that at least 2 players are present; otherwise it returns an error. If the check passes:
 
-- Rounds are selected by calling `buildGame(5)` from `data.js` (5 is the default; the constant `ROUNDS_PER_GAME` at the top of `server.js` controls this).
-- All players receive `game-started` with `{ totalRounds: 5 }` and the first round begins immediately.
+- Rounds are selected by calling `buildGame(questionCount)` from `data.js`; the host controls `questionCount` in the waiting room.
+- All players receive `game-started` with `{ totalRounds, helperCount }` and the first round begins immediately.
 
 ### 4. Round flow
 
 For each round the server:
 
-1. Emits `round-start` with the category and word options. **The `fake` flag is stripped from the options payload** so clients cannot inspect it.
+1. Emits `round-start` with the category and word options. **The `fake` flag, answer-revealing hint, and evidence are stripped from the public payload** so clients cannot inspect the answer.
 2. Begins a 15-second countdown, emitting `timer-tick` once per second to all players.
 3. Listens for `submit-answer` events (`{ optionIndex: number }`). Only the first answer per player per round is recorded.
 4. After each submission, broadcasts `answer-progress` (`{ answered, total }`) so players can see how many others have already answered.
@@ -66,6 +66,7 @@ After each round the server emits `round-results` to all players:
   fakeIndex: number,
   fakeWord: string,
   hint: string,
+  evidence: { sourceName, sourceUrl, summary } | null,
   results: [{ id, correct, earned, speedBonus, score }],
   leaderboard: [{ id, nickname, score }]   // sorted descending
 }
@@ -102,7 +103,7 @@ The host clicks **Play Again**. The server resets all scores to 0, selects a fre
 | Socket-to-room index | `server.js` (`socketRoom` Map) | Fast lookup of which room a socket belongs to |
 | Game data | `data.js` | `ROUNDS` array and `buildGame(n)` — shared by client and server |
 | Lobby UI & room events | `lobby.js` | Client-side room creation/joining, waiting screen |
-| In-game UI & event handling | `multiplayer.js` | Client-side round rendering, timer, leaderboard, podium |
+| In-game UI & event handling | `multiplayer.js` | Client-side round rendering, server-authorized helpers, timer, leaderboard, podium |
 
 ---
 
@@ -117,7 +118,7 @@ server.js  ──►  rooms Map  ──►  ack { code, players }
   │
   │  start-game (host only, ≥ 2 players)
   ▼
-buildGame(5) → room.rounds
+buildGame(questionCount) → room.rounds
   emit game-started → all
   startRound() loop:
     emit round-start (no fake flag) → all
@@ -132,7 +133,7 @@ buildGame(5) → room.rounds
     room.status = 'waiting'
 
   play-again (host only)
-    reset scores, buildGame(5)
+    reset scores and return to lobby
     emit back-to-lobby → all
 ```
 
@@ -143,7 +144,7 @@ buildGame(5) → room.rounds
 | Item | Value |
 |---|---|
 | Default port | `3000` (override with `PORT` env var) |
-| Rounds per game | `5` (`ROUNDS_PER_GAME` constant in `server.js`) |
+| Rounds per game | Host-configurable, default `15` (`DEFAULT_QUESTION_COUNT`) |
 | Round duration | `15 seconds` (`ROUND_TIME_SECONDS`) |
 | Delay between rounds | `4.5 seconds` (`NEXT_ROUND_DELAY_MS`) |
 | Max nickname length | `24 characters` (`NICKNAME_MAX_LENGTH`) |

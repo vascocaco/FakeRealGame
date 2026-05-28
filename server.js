@@ -13,6 +13,7 @@ const NEXT_ROUND_DELAY_MS = 4500;
 const NICKNAME_MAX_LENGTH = 24;
 const ROOM_CODE_REGEX = /^[A-Z0-9]{6}$/;
 const BASE_POINTS = 100;
+const HELPER_ORDER = ['extra-hint', '50-50', 'guilleai'];
 
 function createServer() {
   const app = express();
@@ -74,6 +75,95 @@ function createServer() {
     return [...players]
       .sort((a, b) => b.score - a.score)
       .map((player) => ({ id: player.id, nickname: player.nickname, score: player.score }));
+  }
+
+  function createHelperState(helperCount) {
+    const count = Math.max(0, Math.min(HELPER_ORDER.length, Number(helperCount) || 0));
+    const activeTypes = HELPER_ORDER.slice(0, count);
+    const spentByType = {};
+    activeTypes.forEach((typeKey) => {
+      spentByType[typeKey] = false;
+    });
+    return { activeTypes, spentByType };
+  }
+
+  function resetPlayerHelpers(room) {
+    room.players.forEach((player) => {
+      player.helpers = createHelperState(room.helperCount);
+    });
+  }
+
+  function createRoundStartPayload(room, currentRound) {
+    return {
+      index: room.currentRoundIndex,
+      total: room.rounds.length,
+      category: currentRound.category,
+      options: currentRound.options.map((option) => ({ word: option.word }))
+    };
+  }
+
+  function createRoundRevealPayload(round) {
+    const fakeIndex = round.options.findIndex((option) => option.fake === true);
+    const fakeWord = fakeIndex >= 0 ? round.options[fakeIndex].word : '';
+    return {
+      fakeIndex,
+      fakeWord,
+      hint: round.hint,
+      evidence: round.evidence || null
+    };
+  }
+
+  function shuffledIndexes(indexes) {
+    const copy = [...indexes];
+    for (let i = copy.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function grantPlayerHelper(room, playerId, typeKey) {
+    if (room?.status !== 'in-progress' || !room.roundState || room.roundState.ended) {
+      return { error: 'No active round' };
+    }
+
+    const player = room.players.find((entry) => entry.id === playerId);
+    const helperState = player?.helpers;
+    if (!helperState?.activeTypes.includes(typeKey) || helperState.spentByType[typeKey]) {
+      return { error: 'Helper is not available' };
+    }
+    if (room.roundState.answeredPlayers.has(playerId)) {
+      return { error: 'Helpers cannot be used after answering' };
+    }
+
+    const round = room.rounds[room.currentRoundIndex];
+    if (!round) {
+      return { error: 'No active round' };
+    }
+
+    const reveal = createRoundRevealPayload(round);
+    let payload;
+    if (typeKey === 'extra-hint') {
+      payload = { type: typeKey, hint: reveal.hint, evidence: reveal.evidence };
+    } else if (typeKey === 'guilleai') {
+      payload = {
+        type: typeKey,
+        fakeWord: reveal.fakeWord,
+        confidence: Math.floor(Math.random() * 31) + 65
+      };
+    } else if (typeKey === '50-50') {
+      const nonFakeIndexes = round.options
+        .map((option, index) => ({ option, index }))
+        .filter(({ option }) => option.fake !== true)
+        .map(({ index }) => index);
+      payload = { type: typeKey, eliminateIndexes: shuffledIndexes(nonFakeIndexes).slice(0, 2) };
+    } else {
+      return { error: 'Unknown helper' };
+    }
+
+    helperState.spentByType[typeKey] = true;
+    room.roundState.helperUsers.add(playerId);
+    return payload;
   }
 
   function getHostId(room) {
@@ -149,19 +239,14 @@ function createServer() {
 
     room.roundState = {
       answeredPlayers: new Map(),
+      helperUsers: new Set(),
       timerValue: ROUND_TIME_SECONDS,
       interval: null,
       ended: false,
       roundStartedAt: Date.now()
     };
 
-    io.to(code).emit('round-start', {
-      index: room.currentRoundIndex,
-      total: room.rounds.length,
-      category: currentRound.category,
-      hint: currentRound.hint,
-      options: currentRound.options.map((option) => ({ word: option.word, fake: option.fake }))
-    });
+    io.to(code).emit('round-start', createRoundStartPayload(room, currentRound));
 
     io.to(code).emit('timer-tick', room.roundState.timerValue);
 
@@ -227,15 +312,14 @@ function createServer() {
       return;
     }
 
-    const fakeIndex = round.options.findIndex((option) => option.fake === true);
-    const fakeWord = fakeIndex >= 0 ? round.options[fakeIndex].word : '';
+    const reveal = createRoundRevealPayload(round);
 
     const results = room.players.map((player) => {
       const answer = room.roundState.answeredPlayers.get(player.id);
-      const correct = Boolean(answer && answer.optionIndex === fakeIndex);
+      const correct = Boolean(answer && answer.optionIndex === reveal.fakeIndex);
       const { earned, speedBonus, total } = calculateAnswerScore({
         correct,
-        usedHelper: Boolean(answer?.usedHelper),
+        usedHelper: room.roundState.helperUsers.has(player.id),
         startedAt: room.roundState.roundStartedAt,
         answeredAt: answer?.answeredAt || room.roundState.roundStartedAt
       });
@@ -254,9 +338,10 @@ function createServer() {
     const leaderboard = sortedLeaderboard(room.players);
 
     io.to(code).emit('round-results', {
-      fakeIndex,
-      fakeWord,
-      hint: round.hint,
+      fakeIndex: reveal.fakeIndex,
+      fakeWord: reveal.fakeWord,
+      hint: reveal.hint,
+      evidence: reveal.evidence,
       results,
       leaderboard
     });
@@ -547,6 +632,7 @@ function createServer() {
       room.questionCount = questionCount;
       room.helperCount = helperCount;
       room.rounds = buildGame(room.questionCount);
+      resetPlayerHelpers(room);
 
       io.to(room.code).emit('game-started', {
         totalRounds: room.rounds.length,
@@ -583,6 +669,14 @@ function createServer() {
       });
 
       maybeEndRoundEarly(room.code);
+    });
+
+    socket.on('request-helper', (payload = {}, ack) => {
+      const respond = typeof ack === 'function' ? ack : () => {};
+      const room = getRoomForSocket(socket.id);
+      const typeKey = typeof payload.type === 'string' ? payload.type : '';
+      const result = grantPlayerHelper(room, socket.id, typeKey);
+      respond(result);
     });
 
     socket.on('play-again', (_payload, ack) => {

@@ -71,6 +71,14 @@
     el.roundHint.classList.toggle('visible', Boolean(visible));
   }
 
+  function formatRevealText(hint, evidence) {
+    if (!evidence?.sourceName) {
+      return hint || '';
+    }
+    const summary = evidence.summary ? ` ${evidence.summary}` : '';
+    return `${hint || ''} Source: ${evidence.sourceName}.${summary}`;
+  }
+
   function updateHelperButtons(locked) {
     if (!window.Helpers) {
       el.helperBar.style.display = 'none';
@@ -115,42 +123,61 @@
   function activateFiftyFifty() {
     if (!multiplayerMode || hasAnswered || !currentRound || !window.Helpers?.canActivate('50-50')) return;
 
-    const nonFakeButtons = [...el.options.querySelectorAll('.option')]
-      .filter((btn) => btn.dataset.fake !== 'true' && !btn.classList.contains('option--disabled'));
+    updateHelperButtons(true);
+    socket.emit('request-helper', { type: '50-50' }, (res) => {
+      if (res?.error || !Array.isArray(res.eliminateIndexes)) {
+        updateHelperButtons(false);
+        return;
+      }
 
-    const toDisable = nonFakeButtons.toSorted(() => Math.random() - 0.5).slice(0, 2);
-    toDisable.forEach((btn) => {
-      btn.classList.add('option--disabled');
-      btn.disabled = true;
+      const buttons = el.options.querySelectorAll('.option');
+      res.eliminateIndexes.forEach((index) => {
+        const btn = buttons[index];
+        if (!btn) return;
+        btn.classList.add('option--disabled');
+        btn.disabled = true;
+      });
+
+      window.Helpers.markSpent('50-50');
+      helperUsedThisRound = true;
+      updateHelperButtons(false);
     });
-
-    window.Helpers.markSpent('50-50');
-    helperUsedThisRound = true;
-    updateHelperButtons(false);
   }
 
   function activateGuilleAi() {
     if (!multiplayerMode || hasAnswered || !currentRound || !window.Helpers?.canActivate('guilleai')) return;
 
-    const fake = currentRound.options.find((option) => option.fake);
-    if (!fake) return;
+    updateHelperButtons(true);
+    socket.emit('request-helper', { type: 'guilleai' }, (res) => {
+      if (res?.error || !res.fakeWord) {
+        updateHelperButtons(false);
+        return;
+      }
 
-    const confidence = Math.floor(Math.random() * 31) + 65;
-    el.guilleAiMessage.textContent = `GuilleAI analysed the category and is ${confidence}% confident that "${fake.word}" is the impostor.`;
-    el.guilleAiPanel.style.display = '';
+      el.guilleAiMessage.textContent = `GuilleAI analysed the category and is ${res.confidence}% confident that "${res.fakeWord}" is the impostor.`;
+      el.guilleAiPanel.style.display = '';
 
-    window.Helpers.markSpent('guilleai');
-    helperUsedThisRound = true;
-    updateHelperButtons(false);
+      window.Helpers.markSpent('guilleai');
+      helperUsedThisRound = true;
+      updateHelperButtons(false);
+    });
   }
 
   function activateExtraHint() {
     if (!multiplayerMode || hasAnswered || !currentRound || !window.Helpers?.canActivate('extra-hint')) return;
 
-    setRoundHint(currentRound.hint, true);
-    window.Helpers.markSpent('extra-hint');
-    helperUsedThisRound = true;
-    updateHelperButtons(false);
+    updateHelperButtons(true);
+    socket.emit('request-helper', { type: 'extra-hint' }, (res) => {
+      if (res?.error || !res.hint) {
+        updateHelperButtons(false);
+        return;
+      }
+
+      setRoundHint(formatRevealText(res.hint, res.evidence), true);
+      window.Helpers.markSpent('extra-hint');
+      helperUsedThisRound = true;
+      updateHelperButtons(false);
+    });
   }
 
   // ===== GAME STARTED =====
@@ -200,7 +227,6 @@
       const btn = document.createElement('button');
       btn.className = 'option';
       btn.type = 'button';
-      btn.dataset.fake = String(opt.fake);
       btn.innerHTML = `
         <span class="option-letter">${String.fromCharCode(65 + i)}</span>
         <span class="option-text">${opt.word}</span>
@@ -287,7 +313,7 @@
         el.feedbackTitle.textContent = `Not quite — the fake was "${result.fakeWord}"`;
       }
     }
-    el.feedbackDetail.textContent = result.hint;
+    el.feedbackDetail.textContent = formatRevealText(result.hint, result.evidence);
 
     renderLeaderboard(result.leaderboard);
   });

@@ -27,13 +27,23 @@ window.QUESTIONS_DB = {
     "SI Units",
     "Literary Terms",
     "Chess Terms",
-    "Architectural Styles"
+    "Architectural Styles",
+    "Unicode Emoji Names",
+    "IAU Star Names",
+    "Cloud Species",
+    "US National Parks",
+    "HTML Elements"
   ],
   "researchSources": [
     "https://iauarchive.eso.org/public/themes/constellations/",
     "https://iupac.org/what-we-do/periodic-table-of-elements/",
     "https://science.nasa.gov/solar-system/moons/facts/",
-    "https://www.nhm.ac.uk/discover/dino-directory.html"
+    "https://www.nhm.ac.uk/discover/dino-directory.html",
+    "https://unicode.org/emoji/charts/full-emoji-list.html",
+    "https://www.iau.org/public/themes/naming_stars/",
+    "https://cloudatlas.wmo.int/clouds-species.html",
+    "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+    "https://html.spec.whatwg.org/multipage/indices.html#elements-3"
   ],
   "questions": [
     {
@@ -56,7 +66,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lanthium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Lanthium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -78,7 +93,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Novarium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Novarium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -100,7 +120,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Aurelium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Aurelium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -122,7 +147,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cerulium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Cerulium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -144,7 +174,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ferronium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Ferronium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -166,7 +201,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Quantium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Quantium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -188,7 +228,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Rhadium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Rhadium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -210,7 +255,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Silvium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Silvium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -232,7 +282,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Vesperium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Vesperium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "Chemical Elements",
@@ -254,7 +309,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Zenthium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+      "hint": "\"Zenthium\" is the impostor. The impostor is invented; the other options are official chemical element names.",
+      "evidence": {
+        "sourceName": "IUPAC Periodic Table",
+        "sourceUrl": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "summary": "Real options are checked against the official IUPAC element names."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -276,7 +336,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Tethralis\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Tethralis\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -298,7 +363,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Aurelion\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Aurelion\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -320,7 +390,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Draconis Major\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Draconis Major\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -342,7 +417,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Noctua\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Noctua\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -364,7 +444,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Vulpina\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Vulpina\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -386,7 +471,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cervus\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Cervus\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -408,7 +498,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Orbellum\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Orbellum\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -430,7 +525,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Solisca\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Solisca\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -452,7 +552,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lyronyx\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Lyronyx\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "IAU Constellations",
@@ -474,7 +579,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Nimbora\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+      "hint": "\"Nimbora\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "International Astronomical Union",
+        "sourceUrl": "https://iauarchive.eso.org/public/themes/constellations/",
+        "summary": "Real options are names from the IAU-recognized constellation list."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -496,7 +606,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Caldora\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Caldora\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -518,7 +633,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Vireon\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Vireon\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -540,7 +660,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lunessa\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Lunessa\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -562,7 +687,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Marithel\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Marithel\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -584,7 +714,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Orbatis\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Orbatis\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -606,7 +741,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Thalora\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Thalora\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -628,7 +768,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Jovia\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Jovia\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -650,7 +795,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Saturna Minor\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Saturna Minor\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -672,7 +822,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Neptara\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Neptara\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Planetary Moons",
@@ -694,7 +849,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Umbrielis\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+      "hint": "\"Umbrielis\" is the impostor. The impostor is made up; the other options are named moons in our solar system.",
+      "evidence": {
+        "sourceName": "NASA Solar System Moons",
+        "sourceUrl": "https://science.nasa.gov/solar-system/moons/facts/",
+        "summary": "Real options are named moons listed by NASA."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -716,7 +876,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velocidactyl\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Velocidactyl\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -738,7 +903,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Raptorexus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Raptorexus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -760,7 +930,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Triceradon\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Triceradon\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -782,7 +957,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Megaclawrus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Megaclawrus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -804,7 +984,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Stegonyx\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Stegonyx\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -826,7 +1011,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Brontoraptor\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Brontoraptor\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -848,7 +1038,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ceratovenator\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Ceratovenator\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -870,7 +1065,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dinomimus Rex\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Dinomimus Rex\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -892,7 +1092,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Thundrosaurus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Thundrosaurus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Dinosaurs",
@@ -914,7 +1119,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Clawceratops\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+      "hint": "\"Clawceratops\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera.",
+      "evidence": {
+        "sourceName": "Natural History Museum Dino Directory",
+        "sourceUrl": "https://www.nhm.ac.uk/discover/dino-directory.html",
+        "summary": "Real options are dinosaur genera from the Natural History Museum directory."
+      }
     },
     {
       "category": "Programming Languages",
@@ -936,7 +1146,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Marble\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Marble\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -958,7 +1173,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"CopperScript\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"CopperScript\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -980,7 +1200,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lattice\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Lattice\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1002,7 +1227,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Orchid\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Orchid\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1024,7 +1254,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"ZephyrLang\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"ZephyrLang\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1046,7 +1281,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Pebble\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Pebble\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1068,7 +1308,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Northstar\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Northstar\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1090,7 +1335,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"QuantaScript\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"QuantaScript\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1112,7 +1362,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Vellum\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Vellum\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Programming Languages",
@@ -1134,7 +1389,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Bonsai\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+      "hint": "\"Bonsai\" is the impostor. The impostor is not a recognized programming language; the others are real languages.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1156,7 +1416,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Recency mirage\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Recency mirage\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1178,7 +1443,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Certainty drift\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Certainty drift\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1200,7 +1470,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Halo rebound\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Halo rebound\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1222,7 +1497,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Memory varnish\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Memory varnish\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1244,7 +1524,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Novelty magnetism\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Novelty magnetism\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1266,7 +1551,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Pattern fog\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Pattern fog\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1288,7 +1578,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Truth sparkle\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Truth sparkle\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1310,7 +1605,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Choice gravity\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Choice gravity\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1332,7 +1632,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Consensus shimmer\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Consensus shimmer\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cognitive Biases",
@@ -1354,7 +1659,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Focus echo\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+      "hint": "\"Focus echo\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1376,7 +1686,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Silver lantern\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Silver lantern\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1398,7 +1713,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Golden staircase\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Golden staircase\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1420,7 +1740,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Mirror puddle\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Mirror puddle\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1442,7 +1767,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Paper crown\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Paper crown\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1464,7 +1794,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Circular candle\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Circular candle\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1486,7 +1821,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velvet ladder\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Velvet ladder\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1508,7 +1848,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Silent trumpet\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Silent trumpet\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1530,7 +1875,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Frosted premise\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Frosted premise\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1552,7 +1902,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lantern bridge\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"Lantern bridge\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Logical Fallacies",
@@ -1574,7 +1929,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"False umbrella\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+      "hint": "\"False umbrella\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1596,7 +1956,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Tritonata\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Tritonata\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1618,7 +1983,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Arpeggial\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Arpeggial\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1640,7 +2010,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cadenzino\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Cadenzino\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1662,7 +2037,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"HarmoniqueX\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"HarmoniqueX\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1684,7 +2064,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Melodrake\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Melodrake\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1706,7 +2091,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Syncopata\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Syncopata\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1728,7 +2118,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Tempolet\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Tempolet\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1750,7 +2145,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Chordora\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Chordora\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1772,7 +2172,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ostinelle\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Ostinelle\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Music Theory Terms",
@@ -1794,7 +2199,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Motiflex\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+      "hint": "\"Motiflex\" is the impostor. The impostor is made up; the other options are established music theory or notation terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1816,7 +2226,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Glyphline\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Glyphline\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1838,7 +2253,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Kernmark\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Kernmark\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1860,7 +2280,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Seriflet\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Seriflet\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1882,7 +2307,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Typoraid\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Typoraid\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1904,7 +2334,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Baselock\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Baselock\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1926,7 +2361,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ligaframe\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Ligaframe\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1948,7 +2388,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"CounterlineX\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"CounterlineX\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1970,7 +2415,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ascendry\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Ascendry\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -1992,7 +2442,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Inkspan\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Inkspan\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Typography Terms",
@@ -2014,7 +2469,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Letterwell\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+      "hint": "\"Letterwell\" is the impostor. The impostor is invented; the other options are real typography or type-design terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2036,7 +2496,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Brevitato\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Brevitato\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2058,7 +2523,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Foamado\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Foamado\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2080,7 +2550,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cremello\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Cremello\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2102,7 +2577,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Steamretto\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Steamretto\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2124,7 +2604,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Macchino\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Macchino\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2146,7 +2631,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lattesso\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Lattesso\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2168,7 +2658,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cortanino\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Cortanino\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2190,7 +2685,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"MocharinoX\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"MocharinoX\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2212,7 +2712,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Espressini\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Espressini\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Coffee Drinks",
@@ -2234,7 +2739,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Aromato\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+      "hint": "\"Aromato\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2256,7 +2766,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Vacherol\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Vacherol\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2278,7 +2793,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Brielette\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Brielette\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2300,7 +2820,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Goudarin\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Goudarin\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2322,7 +2847,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Morbella\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Morbella\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2344,7 +2874,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cheddano\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Cheddano\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2366,7 +2901,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Fetessa\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Fetessa\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2388,7 +2928,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"TalegginoX\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"TalegginoX\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2410,7 +2955,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Roquefin\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Roquefin\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2432,7 +2982,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Manchera\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Manchera\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cheeses",
@@ -2454,7 +3009,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Curdova\" is the impostor. The impostor is invented; the other options are real cheese names."
+      "hint": "\"Curdova\" is the impostor. The impostor is invented; the other options are real cheese names.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2476,7 +3036,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Port RoyaleX\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Port RoyaleX\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2498,7 +3063,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Crownmarket\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Crownmarket\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2520,7 +3090,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Tilehaven\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Tilehaven\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2542,7 +3117,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Hex Harbor\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Hex Harbor\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2564,7 +3144,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Castle Orchard\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Castle Orchard\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2586,7 +3171,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Trainspire\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Trainspire\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2608,7 +3198,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Meadowlords\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Meadowlords\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2630,7 +3225,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Guildglass\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Guildglass\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2652,7 +3252,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dice Abbey\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Dice Abbey\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Board Games",
@@ -2674,7 +3279,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Kingdom Loom\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+      "hint": "\"Kingdom Loom\" is the impostor. The impostor is invented; the other options are real tabletop board game titles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2696,7 +3306,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Morvinsky\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Morvinsky\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2718,7 +3333,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ravelsky\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Ravelsky\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2740,7 +3360,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Bachmannino\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Bachmannino\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2762,7 +3387,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Debussart\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Debussart\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2784,7 +3414,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Mozarini\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Mozarini\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2806,7 +3441,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Sibeliusson\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Sibeliusson\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2828,7 +3468,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Handelberg\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Handelberg\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2850,7 +3495,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dvoranek\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Dvoranek\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2872,7 +3522,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Mahlerov\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Mahlerov\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Classical Composers",
@@ -2894,7 +3549,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Bartokian\" is the impostor. The impostor is invented; the other options are real classical composers."
+      "hint": "\"Bartokian\" is the impostor. The impostor is invented; the other options are real classical composers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -2916,7 +3576,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"LuminarismX\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"LuminarismX\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -2938,7 +3603,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Chromalism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Chromalism\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -2960,7 +3630,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velvetism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Velvetism\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -2982,7 +3657,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Post-Fauval\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Post-Fauval\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -3004,7 +3684,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Neo-Glintism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Neo-Glintism\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -3026,7 +3711,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cuborism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Cuborism\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -3048,7 +3738,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Soft RealismX\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Soft RealismX\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -3070,7 +3765,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Prismatism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Prismatism\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -3092,7 +3792,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dreamline\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Dreamline\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Art Movements",
@@ -3114,7 +3819,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Auralism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+      "hint": "\"Auralism\" is the impostor. The impostor is invented; the other options are real art movements or styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3136,7 +3846,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Xenophilos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Xenophilos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3158,7 +3873,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Kleonides\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Kleonides\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3180,7 +3900,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Aristonex\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Aristonex\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3202,7 +3927,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Praxitos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Praxitos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3224,7 +3954,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Theomander\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Theomander\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3246,7 +3981,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Demosophos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Demosophos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3268,7 +4008,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Zenarchus\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Zenarchus\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3290,7 +4035,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Platonor\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Platonor\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3312,7 +4062,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Epikreon\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Epikreon\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Greek Philosophers",
@@ -3334,7 +4089,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Sophirion\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+      "hint": "\"Sophirion\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3356,7 +4116,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Helmora\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Helmora\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3378,7 +4143,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Stormvik\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Stormvik\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3400,7 +4170,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Runefall\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Runefall\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3422,7 +4197,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Skaldor\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Skaldor\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3444,7 +4224,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Frostheim\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Frostheim\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3466,7 +4251,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lokivar\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Lokivar\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3488,7 +4278,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Odinspear\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Odinspear\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3510,7 +4305,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Thundra\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Thundra\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3532,7 +4332,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Bifrostar\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Bifrostar\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Norse Mythology",
@@ -3554,7 +4359,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Wolfsaga\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+      "hint": "\"Wolfsaga\" is the impostor. The impostor is invented; the other options are names from Norse myth.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3576,7 +4386,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Laruthians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Laruthians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3598,7 +4413,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Velorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3620,7 +4440,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Namarites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Namarites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3642,7 +4467,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Aurelites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Aurelites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3664,7 +4494,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Solmecans\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Solmecans\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3686,7 +4521,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Karthunians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Karthunians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3708,7 +4548,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Etrunites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Etrunites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3730,7 +4575,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Mycorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Mycorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3752,7 +4602,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Hittorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Hittorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Ancient Civilizations",
@@ -3774,7 +4629,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Phoebans\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+      "hint": "\"Phoebans\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3796,7 +4656,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Veligar\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Veligar\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3818,7 +4683,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Northspine\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Northspine\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3840,7 +4710,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Eldar Ridge\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Eldar Ridge\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3862,7 +4737,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velvet Alps\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Velvet Alps\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3884,7 +4764,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Thornreach\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Thornreach\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3906,7 +4791,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Solmar Range\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Solmar Range\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3928,7 +4818,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Karakel\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Karakel\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3950,7 +4845,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cloudspine\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Cloudspine\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3972,7 +4872,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Highmere\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Highmere\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Mountain Ranges",
@@ -3994,7 +4899,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dawnfold\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+      "hint": "\"Dawnfold\" is the impostor. The impostor is invented; the other options are real mountain ranges.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4016,7 +4926,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Fractuson\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Fractuson\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4038,7 +4953,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Vaporalis\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Vaporalis\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4060,7 +4980,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Nimbuslet\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Nimbuslet\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4082,7 +5007,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cirrava\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Cirrava\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4104,7 +5034,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Stratolux\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Stratolux\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4126,7 +5061,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cumulora\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Cumulora\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4148,7 +5088,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Mistiform\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Mistiform\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4170,7 +5115,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Aerolace\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Aerolace\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4192,7 +5142,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Rainveil\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Rainveil\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Cloud Types",
@@ -4214,7 +5169,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Cloudora\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+      "hint": "\"Cloudora\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/cloud-classification-summary.html",
+        "summary": "Real options are cloud classifications from the WMO International Cloud Atlas."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4236,7 +5196,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Glasswhale\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Glasswhale\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4258,7 +5223,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Coral lynx\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Coral lynx\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4280,7 +5250,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velvet squidling\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Velvet squidling\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4302,7 +5277,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Moonfin\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Moonfin\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4324,7 +5304,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Reef panther\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Reef panther\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4346,7 +5331,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Sapphire krillbeast\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Sapphire krillbeast\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4368,7 +5358,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ocealisk\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Ocealisk\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4390,7 +5385,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Pearlback\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Pearlback\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4412,7 +5412,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Tide fox\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Tide fox\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Marine Animals",
@@ -4434,7 +5439,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Kelpwing\" is the impostor. The impostor is invented; the other options are real marine animals."
+      "hint": "\"Kelpwing\" is the impostor. The impostor is invented; the other options are real marine animals.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "World Currencies",
@@ -4456,7 +5466,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Florinex\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Florinex\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4478,7 +5493,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Creda\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Creda\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4500,7 +5520,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dollaroid\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Dollaroid\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4522,7 +5547,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Eurotal\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Eurotal\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4544,7 +5574,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Rupino\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Rupino\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4566,7 +5601,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Pesara\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Pesara\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4588,7 +5628,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Krint\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Krint\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4610,7 +5655,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Levora\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Levora\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4632,7 +5682,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dinariq\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Dinariq\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "World Currencies",
@@ -4654,7 +5709,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Wonlet\" is the impostor. The impostor is invented; the other options are real currency names."
+      "hint": "\"Wonlet\" is the impostor. The impostor is invented; the other options are real currency names.",
+      "evidence": {
+        "sourceName": "ISO 4217 Currency Codes",
+        "sourceUrl": "https://www.iso.org/iso-4217-currency-codes.html",
+        "summary": "Real options are currency names represented in ISO 4217."
+      }
     },
     {
       "category": "SI Units",
@@ -4676,7 +5736,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Lumel\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Lumel\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4698,7 +5763,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Voltane\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Voltane\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4720,7 +5790,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Joulon\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Joulon\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4742,7 +5817,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Newtra\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Newtra\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4764,7 +5844,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Kelvion\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Kelvion\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4786,7 +5871,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Pascalis\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Pascalis\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4808,7 +5898,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Candor\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Candor\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4830,7 +5925,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Teslon\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Teslon\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4852,7 +5952,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Metrion\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Metrion\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "SI Units",
@@ -4874,7 +5979,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Faradayne\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+      "hint": "\"Faradayne\" is the impostor. The impostor is invented; the other options are real SI base or derived units.",
+      "evidence": {
+        "sourceName": "BIPM SI Brochure",
+        "sourceUrl": "https://www.bipm.org/en/publications/si-brochure",
+        "summary": "Real options are SI base or derived units."
+      }
     },
     {
       "category": "Literary Terms",
@@ -4896,7 +6006,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Plotglow\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Plotglow\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -4918,7 +6033,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Metaphoria\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Metaphoria\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -4940,7 +6060,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Ironique\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Ironique\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -4962,7 +6087,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Verselet\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Verselet\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -4984,7 +6114,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Narratone\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Narratone\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -5006,7 +6141,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Symbolift\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Symbolift\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -5028,7 +6168,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Foreshade\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Foreshade\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -5050,7 +6195,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Dictionalism\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Dictionalism\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -5072,7 +6222,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Motifora\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Motifora\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Literary Terms",
@@ -5094,7 +6249,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Caesurine\" is the impostor. The impostor is invented; the other options are real literary terms."
+      "hint": "\"Caesurine\" is the impostor. The impostor is invented; the other options are real literary terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5116,7 +6276,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Crownshift\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Crownshift\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5138,7 +6303,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Pawnfall\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Pawnfall\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5160,7 +6330,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Knightlock\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Knightlock\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5182,7 +6357,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Queenveil\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Queenveil\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5204,7 +6384,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Tempo forkX\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Tempo forkX\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5226,7 +6411,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Bishop jump\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Bishop jump\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5248,7 +6438,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Castlepin\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Castlepin\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5270,7 +6465,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Rookspin\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Rookspin\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5292,7 +6492,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Matebridge\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Matebridge\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Chess Terms",
@@ -5314,7 +6519,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Zugflare\" is the impostor. The impostor is invented; the other options are real chess terms."
+      "hint": "\"Zugflare\" is the impostor. The impostor is invented; the other options are real chess terms.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5336,7 +6546,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Glass GothicX\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Glass GothicX\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5358,7 +6573,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Neo-Brickism\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Neo-Brickism\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5380,7 +6600,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Velvet Deco\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Velvet Deco\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5402,7 +6627,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Archiform\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Archiform\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5424,7 +6654,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Baucurve\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Baucurve\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5446,7 +6681,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Romanovo\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Romanovo\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5468,7 +6708,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Post-Baroquism\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Post-Baroquism\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5490,7 +6735,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Modernique\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Modernique\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5512,7 +6762,12 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Stonewave\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Stonewave\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
     },
     {
       "category": "Architectural Styles",
@@ -5534,7 +6789,1362 @@ window.QUESTIONS_DB = {
           "fake": true
         }
       ],
-      "hint": "\"Columnarism\" is the impostor. The impostor is invented; the other options are real architectural styles."
+      "hint": "\"Columnarism\" is the impostor. The impostor is invented; the other options are real architectural styles.",
+      "evidence": {
+        "sourceName": "Curated FakeRealGame reference set",
+        "sourceUrl": "https://github.com/vascocaco/FakeRealGame",
+        "summary": "Real options were selected from established public reference lists for this category."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "grinning face",
+          "fake": false
+        },
+        {
+          "word": "lotus",
+          "fake": false
+        },
+        {
+          "word": "flute",
+          "fake": false
+        },
+        {
+          "word": "sparkle accountant",
+          "fake": true
+        }
+      ],
+      "hint": "\"sparkle accountant\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "ninja",
+          "fake": false
+        },
+        {
+          "word": "moose",
+          "fake": false
+        },
+        {
+          "word": "grinning face",
+          "fake": false
+        },
+        {
+          "word": "moon toast",
+          "fake": true
+        }
+      ],
+      "hint": "\"moon toast\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "mirror ball",
+          "fake": false
+        },
+        {
+          "word": "lime",
+          "fake": false
+        },
+        {
+          "word": "ninja",
+          "fake": false
+        },
+        {
+          "word": "sideways waffle",
+          "fake": true
+        }
+      ],
+      "hint": "\"sideways waffle\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "flute",
+          "fake": false
+        },
+        {
+          "word": "saluting face",
+          "fake": false
+        },
+        {
+          "word": "mirror ball",
+          "fake": false
+        },
+        {
+          "word": "polite volcano",
+          "fake": true
+        }
+      ],
+      "hint": "\"polite volcano\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "grinning face",
+          "fake": false
+        },
+        {
+          "word": "lotus",
+          "fake": false
+        },
+        {
+          "word": "flute",
+          "fake": false
+        },
+        {
+          "word": "tiny courtroom",
+          "fake": true
+        }
+      ],
+      "hint": "\"tiny courtroom\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "ninja",
+          "fake": false
+        },
+        {
+          "word": "moose",
+          "fake": false
+        },
+        {
+          "word": "grinning face",
+          "fake": false
+        },
+        {
+          "word": "cloud spoon",
+          "fake": true
+        }
+      ],
+      "hint": "\"cloud spoon\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "mirror ball",
+          "fake": false
+        },
+        {
+          "word": "lime",
+          "fake": false
+        },
+        {
+          "word": "ninja",
+          "fake": false
+        },
+        {
+          "word": "neon onion",
+          "fake": true
+        }
+      ],
+      "hint": "\"neon onion\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "flute",
+          "fake": false
+        },
+        {
+          "word": "saluting face",
+          "fake": false
+        },
+        {
+          "word": "mirror ball",
+          "fake": false
+        },
+        {
+          "word": "sleepy compass",
+          "fake": true
+        }
+      ],
+      "hint": "\"sleepy compass\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "grinning face",
+          "fake": false
+        },
+        {
+          "word": "lotus",
+          "fake": false
+        },
+        {
+          "word": "flute",
+          "fake": false
+        },
+        {
+          "word": "bubble ladder",
+          "fake": true
+        }
+      ],
+      "hint": "\"bubble ladder\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "Unicode Emoji Names",
+      "options": [
+        {
+          "word": "ninja",
+          "fake": false
+        },
+        {
+          "word": "moose",
+          "fake": false
+        },
+        {
+          "word": "grinning face",
+          "fake": false
+        },
+        {
+          "word": "laser teapot",
+          "fake": true
+        }
+      ],
+      "hint": "\"laser teapot\" is the impostor. The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+      "evidence": {
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "summary": "Real options are official CLDR short names in the Unicode emoji charts."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Acrux",
+          "fake": false
+        },
+        {
+          "word": "Deneb",
+          "fake": false
+        },
+        {
+          "word": "Procyon",
+          "fake": false
+        },
+        {
+          "word": "Velmara",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velmara\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Betelgeuse",
+          "fake": false
+        },
+        {
+          "word": "Polaris",
+          "fake": false
+        },
+        {
+          "word": "Acrux",
+          "fake": false
+        },
+        {
+          "word": "Orionyx",
+          "fake": true
+        }
+      ],
+      "hint": "\"Orionyx\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Fomalhaut",
+          "fake": false
+        },
+        {
+          "word": "Sirius",
+          "fake": false
+        },
+        {
+          "word": "Betelgeuse",
+          "fake": false
+        },
+        {
+          "word": "Solquill",
+          "fake": true
+        }
+      ],
+      "hint": "\"Solquill\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Procyon",
+          "fake": false
+        },
+        {
+          "word": "Altair",
+          "fake": false
+        },
+        {
+          "word": "Fomalhaut",
+          "fake": false
+        },
+        {
+          "word": "Asteron Vale",
+          "fake": true
+        }
+      ],
+      "hint": "\"Asteron Vale\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Acrux",
+          "fake": false
+        },
+        {
+          "word": "Deneb",
+          "fake": false
+        },
+        {
+          "word": "Procyon",
+          "fake": false
+        },
+        {
+          "word": "Nimbral",
+          "fake": true
+        }
+      ],
+      "hint": "\"Nimbral\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Betelgeuse",
+          "fake": false
+        },
+        {
+          "word": "Polaris",
+          "fake": false
+        },
+        {
+          "word": "Acrux",
+          "fake": false
+        },
+        {
+          "word": "Caldaris",
+          "fake": true
+        }
+      ],
+      "hint": "\"Caldaris\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Fomalhaut",
+          "fake": false
+        },
+        {
+          "word": "Sirius",
+          "fake": false
+        },
+        {
+          "word": "Betelgeuse",
+          "fake": false
+        },
+        {
+          "word": "Lunovar",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lunovar\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Procyon",
+          "fake": false
+        },
+        {
+          "word": "Altair",
+          "fake": false
+        },
+        {
+          "word": "Fomalhaut",
+          "fake": false
+        },
+        {
+          "word": "Ecliptor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ecliptor\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Acrux",
+          "fake": false
+        },
+        {
+          "word": "Deneb",
+          "fake": false
+        },
+        {
+          "word": "Procyon",
+          "fake": false
+        },
+        {
+          "word": "Vespera Major",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vespera Major\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "IAU Star Names",
+      "options": [
+        {
+          "word": "Betelgeuse",
+          "fake": false
+        },
+        {
+          "word": "Polaris",
+          "fake": false
+        },
+        {
+          "word": "Acrux",
+          "fake": false
+        },
+        {
+          "word": "Starvane",
+          "fake": true
+        }
+      ],
+      "hint": "\"Starvane\" is the impostor. The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+      "evidence": {
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "summary": "Real options are proper star names approved by the IAU Working Group on Star Names."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Calvus",
+          "fake": false
+        },
+        {
+          "word": "Fractus",
+          "fake": false
+        },
+        {
+          "word": "Nebulosus",
+          "fake": false
+        },
+        {
+          "word": "Vaporalis",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vaporalis\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Fibratus",
+          "fake": false
+        },
+        {
+          "word": "Mediocris",
+          "fake": false
+        },
+        {
+          "word": "Calvus",
+          "fake": false
+        },
+        {
+          "word": "Nimbuslet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Nimbuslet\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Humilis",
+          "fake": false
+        },
+        {
+          "word": "Uncinus",
+          "fake": false
+        },
+        {
+          "word": "Fibratus",
+          "fake": false
+        },
+        {
+          "word": "Aerolace",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aerolace\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Nebulosus",
+          "fake": false
+        },
+        {
+          "word": "Castellanus",
+          "fake": false
+        },
+        {
+          "word": "Humilis",
+          "fake": false
+        },
+        {
+          "word": "Cirrava",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cirrava\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Calvus",
+          "fake": false
+        },
+        {
+          "word": "Fractus",
+          "fake": false
+        },
+        {
+          "word": "Nebulosus",
+          "fake": false
+        },
+        {
+          "word": "Rainveil",
+          "fake": true
+        }
+      ],
+      "hint": "\"Rainveil\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Fibratus",
+          "fake": false
+        },
+        {
+          "word": "Mediocris",
+          "fake": false
+        },
+        {
+          "word": "Calvus",
+          "fake": false
+        },
+        {
+          "word": "Stratolux",
+          "fake": true
+        }
+      ],
+      "hint": "\"Stratolux\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Humilis",
+          "fake": false
+        },
+        {
+          "word": "Uncinus",
+          "fake": false
+        },
+        {
+          "word": "Fibratus",
+          "fake": false
+        },
+        {
+          "word": "Mistiform",
+          "fake": true
+        }
+      ],
+      "hint": "\"Mistiform\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Nebulosus",
+          "fake": false
+        },
+        {
+          "word": "Castellanus",
+          "fake": false
+        },
+        {
+          "word": "Humilis",
+          "fake": false
+        },
+        {
+          "word": "Cloudora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cloudora\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Calvus",
+          "fake": false
+        },
+        {
+          "word": "Fractus",
+          "fake": false
+        },
+        {
+          "word": "Nebulosus",
+          "fake": false
+        },
+        {
+          "word": "Vellatus",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vellatus\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "Cloud Species",
+      "options": [
+        {
+          "word": "Fibratus",
+          "fake": false
+        },
+        {
+          "word": "Mediocris",
+          "fake": false
+        },
+        {
+          "word": "Calvus",
+          "fake": false
+        },
+        {
+          "word": "Plumora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Plumora\" is the impostor. The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+      "evidence": {
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "summary": "Real options are cloud species names from the WMO International Cloud Atlas."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Acadia",
+          "fake": false
+        },
+        {
+          "word": "Denali",
+          "fake": false
+        },
+        {
+          "word": "Joshua Tree",
+          "fake": false
+        },
+        {
+          "word": "Silver Mesa",
+          "fake": true
+        }
+      ],
+      "hint": "\"Silver Mesa\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Biscayne",
+          "fake": false
+        },
+        {
+          "word": "Haleakala",
+          "fake": false
+        },
+        {
+          "word": "Acadia",
+          "fake": false
+        },
+        {
+          "word": "Moonridge",
+          "fake": true
+        }
+      ],
+      "hint": "\"Moonridge\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Everglades",
+          "fake": false
+        },
+        {
+          "word": "Yosemite",
+          "fake": false
+        },
+        {
+          "word": "Biscayne",
+          "fake": false
+        },
+        {
+          "word": "Cedar Crown",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cedar Crown\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Joshua Tree",
+          "fake": false
+        },
+        {
+          "word": "Badlands",
+          "fake": false
+        },
+        {
+          "word": "Everglades",
+          "fake": false
+        },
+        {
+          "word": "Redglass",
+          "fake": true
+        }
+      ],
+      "hint": "\"Redglass\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Acadia",
+          "fake": false
+        },
+        {
+          "word": "Denali",
+          "fake": false
+        },
+        {
+          "word": "Joshua Tree",
+          "fake": false
+        },
+        {
+          "word": "Northspire",
+          "fake": true
+        }
+      ],
+      "hint": "\"Northspire\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Biscayne",
+          "fake": false
+        },
+        {
+          "word": "Haleakala",
+          "fake": false
+        },
+        {
+          "word": "Acadia",
+          "fake": false
+        },
+        {
+          "word": "Prairie Hollow",
+          "fake": true
+        }
+      ],
+      "hint": "\"Prairie Hollow\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Everglades",
+          "fake": false
+        },
+        {
+          "word": "Yosemite",
+          "fake": false
+        },
+        {
+          "word": "Biscayne",
+          "fake": false
+        },
+        {
+          "word": "Blue Chimney",
+          "fake": true
+        }
+      ],
+      "hint": "\"Blue Chimney\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Joshua Tree",
+          "fake": false
+        },
+        {
+          "word": "Badlands",
+          "fake": false
+        },
+        {
+          "word": "Everglades",
+          "fake": false
+        },
+        {
+          "word": "Canyonmere",
+          "fake": true
+        }
+      ],
+      "hint": "\"Canyonmere\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Acadia",
+          "fake": false
+        },
+        {
+          "word": "Denali",
+          "fake": false
+        },
+        {
+          "word": "Joshua Tree",
+          "fake": false
+        },
+        {
+          "word": "Pine Eclipse",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pine Eclipse\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "US National Parks",
+      "options": [
+        {
+          "word": "Biscayne",
+          "fake": false
+        },
+        {
+          "word": "Haleakala",
+          "fake": false
+        },
+        {
+          "word": "Acadia",
+          "fake": false
+        },
+        {
+          "word": "Sunforge",
+          "fake": true
+        }
+      ],
+      "hint": "\"Sunforge\" is the impostor. The impostor is invented; the other options are United States national parks.",
+      "evidence": {
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "summary": "Real options are official U.S. national park names from the National Park Service."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "article",
+          "fake": false
+        },
+        {
+          "word": "figcaption",
+          "fake": false
+        },
+        {
+          "word": "section",
+          "fake": false
+        },
+        {
+          "word": "stack",
+          "fake": true
+        }
+      ],
+      "hint": "\"stack\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "dialog",
+          "fake": false
+        },
+        {
+          "word": "picture",
+          "fake": false
+        },
+        {
+          "word": "article",
+          "fake": false
+        },
+        {
+          "word": "glyph",
+          "fake": true
+        }
+      ],
+      "hint": "\"glyph\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "main",
+          "fake": false
+        },
+        {
+          "word": "textarea",
+          "fake": false
+        },
+        {
+          "word": "dialog",
+          "fake": false
+        },
+        {
+          "word": "panel",
+          "fake": true
+        }
+      ],
+      "hint": "\"panel\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "section",
+          "fake": false
+        },
+        {
+          "word": "canvas",
+          "fake": false
+        },
+        {
+          "word": "main",
+          "fake": false
+        },
+        {
+          "word": "viewport",
+          "fake": true
+        }
+      ],
+      "hint": "\"viewport\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "article",
+          "fake": false
+        },
+        {
+          "word": "figcaption",
+          "fake": false
+        },
+        {
+          "word": "section",
+          "fake": false
+        },
+        {
+          "word": "spark",
+          "fake": true
+        }
+      ],
+      "hint": "\"spark\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "dialog",
+          "fake": false
+        },
+        {
+          "word": "picture",
+          "fake": false
+        },
+        {
+          "word": "article",
+          "fake": false
+        },
+        {
+          "word": "card",
+          "fake": true
+        }
+      ],
+      "hint": "\"card\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "main",
+          "fake": false
+        },
+        {
+          "word": "textarea",
+          "fake": false
+        },
+        {
+          "word": "dialog",
+          "fake": false
+        },
+        {
+          "word": "drawer",
+          "fake": true
+        }
+      ],
+      "hint": "\"drawer\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "section",
+          "fake": false
+        },
+        {
+          "word": "canvas",
+          "fake": false
+        },
+        {
+          "word": "main",
+          "fake": false
+        },
+        {
+          "word": "badge",
+          "fake": true
+        }
+      ],
+      "hint": "\"badge\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "article",
+          "fake": false
+        },
+        {
+          "word": "figcaption",
+          "fake": false
+        },
+        {
+          "word": "section",
+          "fake": false
+        },
+        {
+          "word": "ribbon",
+          "fake": true
+        }
+      ],
+      "hint": "\"ribbon\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
+    },
+    {
+      "category": "HTML Elements",
+      "options": [
+        {
+          "word": "dialog",
+          "fake": false
+        },
+        {
+          "word": "picture",
+          "fake": false
+        },
+        {
+          "word": "article",
+          "fake": false
+        },
+        {
+          "word": "portalbox",
+          "fake": true
+        }
+      ],
+      "hint": "\"portalbox\" is the impostor. The impostor is invented; the other options are real HTML elements.",
+      "evidence": {
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "summary": "Real options are element names listed in the WHATWG HTML Standard index."
+      }
     }
   ]
 };

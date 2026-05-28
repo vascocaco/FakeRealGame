@@ -38,6 +38,16 @@ function validateQuestion(question, index) {
     fail(`${label}.hint must be a helpful string`);
   }
 
+  if (!question.evidence || typeof question.evidence !== 'object' || Array.isArray(question.evidence)) {
+    fail(`${label}.evidence must be an object`);
+  } else {
+    ['sourceName', 'sourceUrl', 'summary'].forEach((field) => {
+      if (typeof question.evidence[field] !== 'string' || !question.evidence[field].trim()) {
+        fail(`${label}.evidence.${field} must be a non-empty string`);
+      }
+    });
+  }
+
   if (!Array.isArray(question.options) || question.options.length !== 4) {
     fail(`${label}.options must contain exactly 4 options`);
     return;
@@ -80,8 +90,8 @@ if (db) {
   if (!Array.isArray(db.questions)) {
     fail('questions must be an array');
   } else {
-    if (db.questions.length !== 250) {
-      fail(`questions must contain exactly 250 entries, found ${db.questions.length}`);
+    if (db.questions.length !== 300) {
+      fail(`questions must contain exactly 300 entries, found ${db.questions.length}`);
     }
     db.questions.forEach(validateQuestion);
   }

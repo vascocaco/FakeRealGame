@@ -157,7 +157,70 @@ CATEGORIES = [
         "reals": ["Art Deco", "Baroque", "Bauhaus", "Beaux-Arts", "Brutalism", "Deconstructivism", "Gothic", "Modernism", "Neoclassical", "Postmodernism", "Romanesque", "Victorian"],
         "fakes": ["Glass GothicX", "Neo-Brickism", "Velvet Deco", "Archiform", "Baucurve", "Romanovo", "Post-Baroquism", "Modernique", "Stonewave", "Columnarism"],
     },
+    {
+        "name": "Unicode Emoji Names",
+        "hint": "The impostor is invented; the other options are official Unicode CLDR emoji short names.",
+        "sourceName": "Unicode Emoji List",
+        "sourceUrl": "https://unicode.org/emoji/charts/full-emoji-list.html",
+        "evidenceSummary": "Real options are official CLDR short names in the Unicode emoji charts.",
+        "reals": ["grinning face", "melting face", "saluting face", "ninja", "robot", "lotus", "mirror ball", "wireless", "moose", "flute", "phoenix", "lime"],
+        "fakes": ["sparkle accountant", "moon toast", "sideways waffle", "polite volcano", "tiny courtroom", "cloud spoon", "neon onion", "sleepy compass", "bubble ladder", "laser teapot"],
+    },
+    {
+        "name": "IAU Star Names",
+        "hint": "The impostor is invented; the other options are proper star names approved by the International Astronomical Union.",
+        "sourceName": "IAU Star Names",
+        "sourceUrl": "https://www.iau.org/public/themes/naming_stars/",
+        "evidenceSummary": "Real options are proper star names approved by the IAU Working Group on Star Names.",
+        "reals": ["Acrux", "Aldebaran", "Altair", "Betelgeuse", "Canopus", "Deneb", "Fomalhaut", "Mimosa", "Polaris", "Procyon", "Rigel", "Sirius"],
+        "fakes": ["Velmara", "Orionyx", "Solquill", "Asteron Vale", "Nimbral", "Caldaris", "Lunovar", "Ecliptor", "Vespera Major", "Starvane"],
+    },
+    {
+        "name": "Cloud Species",
+        "hint": "The impostor is invented; the other options are cloud species recognized by the World Meteorological Organization.",
+        "sourceName": "WMO International Cloud Atlas",
+        "sourceUrl": "https://cloudatlas.wmo.int/clouds-species.html",
+        "evidenceSummary": "Real options are cloud species names from the WMO International Cloud Atlas.",
+        "reals": ["Calvus", "Capillatus", "Castellanus", "Fibratus", "Floccus", "Fractus", "Humilis", "Lenticularis", "Mediocris", "Nebulosus", "Spissatus", "Uncinus"],
+        "fakes": ["Vaporalis", "Nimbuslet", "Aerolace", "Cirrava", "Rainveil", "Stratolux", "Mistiform", "Cloudora", "Vellatus", "Plumora"],
+    },
+    {
+        "name": "US National Parks",
+        "hint": "The impostor is invented; the other options are United States national parks.",
+        "sourceName": "National Park Service",
+        "sourceUrl": "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+        "evidenceSummary": "Real options are official U.S. national park names from the National Park Service.",
+        "reals": ["Acadia", "Arches", "Badlands", "Biscayne", "Canyonlands", "Denali", "Everglades", "Glacier", "Haleakala", "Joshua Tree", "Shenandoah", "Yosemite"],
+        "fakes": ["Silver Mesa", "Moonridge", "Cedar Crown", "Redglass", "Northspire", "Prairie Hollow", "Blue Chimney", "Canyonmere", "Pine Eclipse", "Sunforge"],
+    },
+    {
+        "name": "HTML Elements",
+        "hint": "The impostor is invented; the other options are real HTML elements.",
+        "sourceName": "WHATWG HTML Standard",
+        "sourceUrl": "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
+        "evidenceSummary": "Real options are element names listed in the WHATWG HTML Standard index.",
+        "reals": ["article", "aside", "canvas", "dialog", "fieldset", "figcaption", "main", "meter", "picture", "section", "template", "textarea"],
+        "fakes": ["stack", "glyph", "panel", "viewport", "spark", "card", "drawer", "badge", "ribbon", "portalbox"],
+    },
 ]
+
+
+SOURCE_BY_CATEGORY = {
+    "Chemical Elements": ("IUPAC Periodic Table", "https://iupac.org/what-we-do/periodic-table-of-elements/", "Real options are checked against the official IUPAC element names."),
+    "IAU Constellations": ("International Astronomical Union", "https://iauarchive.eso.org/public/themes/constellations/", "Real options are names from the IAU-recognized constellation list."),
+    "Planetary Moons": ("NASA Solar System Moons", "https://science.nasa.gov/solar-system/moons/facts/", "Real options are named moons listed by NASA."),
+    "Dinosaurs": ("Natural History Museum Dino Directory", "https://www.nhm.ac.uk/discover/dino-directory.html", "Real options are dinosaur genera from the Natural History Museum directory."),
+    "Cloud Types": ("WMO International Cloud Atlas", "https://cloudatlas.wmo.int/cloud-classification-summary.html", "Real options are cloud classifications from the WMO International Cloud Atlas."),
+    "World Currencies": ("ISO 4217 Currency Codes", "https://www.iso.org/iso-4217-currency-codes.html", "Real options are currency names represented in ISO 4217."),
+    "SI Units": ("BIPM SI Brochure", "https://www.bipm.org/en/publications/si-brochure", "Real options are SI base or derived units."),
+}
+
+
+DEFAULT_SOURCE = (
+    "Curated FakeRealGame reference set",
+    "https://github.com/vascocaco/FakeRealGame",
+    "Real options were selected from established public reference lists for this category.",
+)
 
 
 def build_questions():
@@ -165,6 +228,10 @@ def build_questions():
     for category in CATEGORIES:
         reals = category["reals"]
         fakes = category["fakes"]
+        source_name, source_url, evidence_summary = SOURCE_BY_CATEGORY.get(category["name"], DEFAULT_SOURCE)
+        source_name = category.get("sourceName", source_name)
+        source_url = category.get("sourceUrl", source_url)
+        evidence_summary = category.get("evidenceSummary", evidence_summary)
         for index, fake in enumerate(fakes):
             real_options = [
                 reals[(index * 3) % len(reals)],
@@ -177,6 +244,11 @@ def build_questions():
                 "category": category["name"],
                 "options": options,
                 "hint": f'"{fake}" is the impostor. {category["hint"]}',
+                "evidence": {
+                    "sourceName": source_name,
+                    "sourceUrl": source_url,
+                    "summary": evidence_summary,
+                },
             })
     return questions
 
@@ -192,6 +264,11 @@ def main():
             "https://iupac.org/what-we-do/periodic-table-of-elements/",
             "https://science.nasa.gov/solar-system/moons/facts/",
             "https://www.nhm.ac.uk/discover/dino-directory.html",
+            "https://unicode.org/emoji/charts/full-emoji-list.html",
+            "https://www.iau.org/public/themes/naming_stars/",
+            "https://cloudatlas.wmo.int/clouds-species.html",
+            "https://www.nps.gov/subjects/nationalparks/list-of-national-parks.htm",
+            "https://html.spec.whatwg.org/multipage/indices.html#elements-3",
         ],
         "questions": questions,
     }

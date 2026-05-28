@@ -6,7 +6,7 @@ The Quiz Helpers feature adds three optional, one-use-per-game lifelines to both
 
 The number of helpers each player receives is configurable. Solo players set both the question count and helper count on the intro screen before starting. In multiplayer, the room Host controls those values in the waiting room; Guests see the settings as read-only. Helpers are per-player consumables in multiplayer — one player using a helper has no effect on any other player's game.
 
-The default game configuration is **15 questions** and **3 helpers** (one of each type). To support 15 unique questions, the `ROUNDS` array in `data.js` was expanded from 12 to 21 entries.
+The default game configuration is **15 questions** and **3 helpers** (one of each type). The generated question database currently contains 300 rounds across 30 categories.
 
 ---
 
@@ -27,8 +27,8 @@ The default game configuration is **15 questions** and **3 helpers** (one of eac
 2. When the Host clicks **Start Game**, `lobby.js` reads both input values and includes them in the `start-game` Socket.io event payload as `{ questionCount, helperCount }`.
 3. `server.js` validates both values (see [Server-side validation](#server-side-validation)), calls `buildGame(questionCount)` to generate the round set, and broadcasts `game-started` to all players in the room with `{ totalRounds, helperCount }` in the payload.
 4. Each client's `multiplayer.js` handles `game-started`, calls `Helpers.reset()` then `Helpers.init(helperCount)`, and enters game mode.
-5. Helper button click handlers in `multiplayer.js` mirror the solo logic, but guard against non-multiplayer mode and use the locally cached `currentRound` object received from the server.
-6. Helper activations are entirely client-local. No new Socket.io events are emitted when a helper is used, and the server scoring logic is unchanged.
+5. Helper button click handlers in `multiplayer.js` mirror the solo UX, but request helper effects from the server with `request-helper` so answer-bearing data is not sent in the public `round-start` payload.
+6. Helper activations are per-player and server-authorized in multiplayer. The server marks helpers spent, returns only the requested helper effect to that player, and removes speed bonus eligibility for that round.
 7. On multiplayer rematch, when a new `game-started` event is received, helpers are reset and re-initialised with the new game's `helperCount`.
 
 ---
@@ -51,7 +51,7 @@ Attribution string: *"GuilleAI analysed the category and is N% confident that '[
 The panel closes when the player clicks **Dismiss** or when the next round begins. Dismissing the panel does not alter which options are selectable.
 
 - Cannot be activated after the player has already answered the current round.
-- GuilleAI operates entirely on client-side round data; no external API is called.
+- GuilleAI does not call an external API; solo uses local round data and multiplayer uses server-held round data.
 
 ### Extra Hint
 
@@ -85,9 +85,9 @@ For example, `helperCount = 1` grants only Extra Hint; `helperCount = 2` grants 
 | Solo game logic | `app.js` | Reads config, initialises helpers, wires click handlers, applies helper effects |
 | Multiplayer waiting room UI | `index.html` (`#screen-waiting`) | Host editable inputs; Guest read-only summary |
 | Multiplayer lobby logic | `lobby.js` | Shows/hides host vs. guest config panels; includes `questionCount` and `helperCount` in `start-game` payload |
-| Multiplayer game logic | `multiplayer.js` | Handles `game-started` payload, initialises helpers, wires identical click handlers |
+| Multiplayer game logic | `multiplayer.js` | Handles `game-started` payload, initialises helpers, requests multiplayer helper effects from the server |
 | Server validation & game construction | `server.js` | Validates both config values, calls `buildGame(questionCount)`, includes `helperCount` in `game-started` |
-| Round data | `data.js` | 21-entry `ROUNDS` array; `buildGame(n)` with clamping guard |
+| Round data | `data.js` | 300-entry generated `ROUNDS` array; `buildGame(n)` with clamping guard |
 | Helper bar UI | `index.html` (`#screen-game`) | `#helper-bar` container; three buttons; GuilleAI panel overlay |
 | Styling | `styles.css` | `.helper-btn--spent`, `.helper-btn--hidden`, `.option--disabled`, GuilleAI panel styles |
 
@@ -131,7 +131,7 @@ Multiplayer start
 
 | Field | Valid range | Error response |
 |-------|-------------|----------------|
-| `questionCount` | Integer, 1 – `ROUNDS.length` (currently 21) | `{ error: "questionCount must be an integer between 1 and 21" }` |
+| `questionCount` | Integer, 1 to `ROUNDS.length` (currently 300) | `{ error: "questionCount must be an integer between 1 and 300" }` |
 | `helperCount` | Integer, 0 – 3 | `{ error: "helperCount must be an integer between 0 and 3" }` |
 
 Invalid payloads return an error via the acknowledgement callback and do not start the game.
@@ -144,7 +144,7 @@ Invalid payloads return an error via the acknowledgement callback and do not sta
 |------|--------|
 | Default question count | 15 |
 | Default helper count | 3 |
-| Maximum question count | `ROUNDS.length` (currently 21) |
+| Maximum question count | `ROUNDS.length` (currently 300) |
 | Maximum helper count | 3 (MVP cap — equals the number of available helper types) |
 | `helpers.js` load position | After `data.js`, before `app.js` (see `index.html` script order) |
 | External services | None — GuilleAI is fully client-side |
