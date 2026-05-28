@@ -57,7 +57,9 @@ In multiplayer, helpers are per-player — using one does not affect other playe
 |---|---|
 | `index.html` | Single-page app — all screens (intro, lobby, waiting, game, results, podium) |
 | `styles.css` | All styling; uses CSS custom properties for theming |
-| `data.js` | `ROUNDS` array (21 trivia rounds) and `buildGame(n)` function; dual-export (browser global + `module.exports`) |
+| `data/questions.json` | JSON question database with 250 rounds across 25 categories |
+| `data/questions-db.js` | Browser-ready mirror generated from the JSON database |
+| `data.js` | Loads the question database and exposes `ROUNDS`, `CATEGORIES`, and `buildGame(n)`; dual-export (browser global + `module.exports`) |
 | `helpers.js` | Shared helper/lifeline state module (`window.Helpers`); tracks active types and spent state |
 | `app.js` | Solo game logic (IIFE); includes helper activation logic |
 | `lobby.js` | Multiplayer lobby UI and Socket.io room management; sends question/helper config on game start |
@@ -95,5 +97,6 @@ See [docs/features/public-deployment.md](docs/features/public-deployment.md) for
 ## Development Notes
 
 - **No build step.** Changes to any `.js`, `.css`, or `.html` file take effect on browser reload.
-- **No automated tests.** See [docs/tests/manual-test-multiplayer-backend.md](docs/tests/manual-test-multiplayer-backend.md) for the manual test guide.
+- **Question database.** Edit `scripts/generate_questions_db.py`, then run `npm run generate:questions` to refresh `data/questions.json` and `data/questions-db.js`.
+- **Validation.** Run `npm test` to verify the question database shape.
 - **State is in-memory.** Restarting the server clears all active rooms.

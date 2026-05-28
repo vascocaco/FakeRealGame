@@ -18,6 +18,7 @@
     hintRevealed: false,
     guilleAiConfidence: null,
     guilleAiWord: '',
+    helperUsedThisRound: false,
     helperCount: DEFAULT_HELPER_COUNT
   };
 
@@ -134,6 +135,7 @@
     state.hintRevealed = false;
     state.guilleAiConfidence = null;
     state.guilleAiWord = '';
+    state.helperUsedThisRound = false;
     setRoundHint('', false);
     hideGuilleAiPanel();
   }
@@ -210,7 +212,7 @@
       state.correct++;
       state.streak++;
       state.bestStreak = Math.max(state.bestStreak, state.streak);
-      const bonus = Math.max(0, state.streak - 1) * STREAK_BONUS;
+      const bonus = state.helperUsedThisRound ? 0 : Math.max(0, state.streak - 1) * STREAK_BONUS;
       const gained = POINTS_CORRECT + bonus;
       const prev = state.score;
       state.score += gained;
@@ -288,6 +290,7 @@
     });
 
     window.Helpers.markSpent('50-50');
+    state.helperUsedThisRound = true;
     updateHelperButtons(false);
   }
 
@@ -306,6 +309,7 @@
     showGuilleAiPanel();
 
     window.Helpers.markSpent('guilleai');
+    state.helperUsedThisRound = true;
     updateHelperButtons(false);
   }
 
@@ -317,6 +321,7 @@
     state.hintRevealed = true;
     setRoundHint(round.hint, true);
     window.Helpers.markSpent('extra-hint');
+    state.helperUsedThisRound = true;
     updateHelperButtons(false);
   }
 

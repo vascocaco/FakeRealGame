@@ -119,17 +119,6 @@ function createServer() {
     });
   }
 
-  function calculateSpeedBonus(startedAt, answeredAt) {
-    const elapsed = Math.max(0, Math.min(ROUND_TIME_SECONDS, (answeredAt - startedAt) / 1000));
-    if (elapsed <= 1) {
-      return 50;
-    }
-    if (elapsed >= 14) {
-      return 0;
-    }
-    return Math.max(0, Math.min(50, Math.round((50 * (14 - elapsed)) / 13)));
-  }
-
   function parseQuestionCount(value) {
     const n = Number(value);
     if (!Number.isInteger(n) || n < 1 || n > ROUNDS.length) {
@@ -244,10 +233,14 @@ function createServer() {
     const results = room.players.map((player) => {
       const answer = room.roundState.answeredPlayers.get(player.id);
       const correct = Boolean(answer && answer.optionIndex === fakeIndex);
-      const earned = correct ? BASE_POINTS : 0;
-      const speedBonus = correct ? calculateSpeedBonus(room.roundState.roundStartedAt, answer.answeredAt) : 0;
+      const { earned, speedBonus, total } = calculateAnswerScore({
+        correct,
+        usedHelper: Boolean(answer?.usedHelper),
+        startedAt: room.roundState.roundStartedAt,
+        answeredAt: answer?.answeredAt || room.roundState.roundStartedAt
+      });
       if (correct) {
-        player.score += earned + speedBonus;
+        player.score += total;
       }
       return {
         id: player.id,
@@ -580,7 +573,8 @@ function createServer() {
 
       room.roundState.answeredPlayers.set(socket.id, {
         optionIndex,
-        answeredAt: Date.now()
+        answeredAt: Date.now(),
+        usedHelper: Boolean(payload.usedHelper)
       });
 
       io.to(room.code).emit('answer-progress', {
@@ -647,4 +641,25 @@ if (require.main === module) {
   });
 }
 
-module.exports = { createServer };
+function calculateSpeedBonus(startedAt, answeredAt) {
+  const elapsed = Math.max(0, Math.min(ROUND_TIME_SECONDS, (answeredAt - startedAt) / 1000));
+  if (elapsed <= 1) {
+    return 50;
+  }
+  if (elapsed >= 14) {
+    return 0;
+  }
+  return Math.max(0, Math.min(50, Math.round((50 * (14 - elapsed)) / 13)));
+}
+
+function calculateAnswerScore({ correct, usedHelper, startedAt, answeredAt }) {
+  const earned = correct ? BASE_POINTS : 0;
+  const speedBonus = correct && !usedHelper ? calculateSpeedBonus(startedAt, answeredAt) : 0;
+  return {
+    earned,
+    speedBonus,
+    total: earned + speedBonus
+  };
+}
+
+module.exports = { createServer, calculateAnswerScore };

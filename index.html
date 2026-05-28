@@ -63,7 +63,7 @@
         <div class="game-config" id="solo-config-panel">
           <div class="config-field">
             <label for="solo-question-count">Questions</label>
-            <input type="number" id="solo-question-count" min="1" max="21" value="15" />
+            <input type="number" id="solo-question-count" min="1" max="250" value="15" />
           </div>
           <div class="config-field">
             <label for="solo-helper-count">Helpers</label>
@@ -120,7 +120,7 @@
         <div class="waiting-config waiting-config-host" id="waiting-config-host" style="display:none">
           <div class="config-field">
             <label for="waiting-question-count">Questions</label>
-            <input type="number" id="waiting-question-count" min="1" max="21" value="15" />
+            <input type="number" id="waiting-question-count" min="1" max="250" value="15" />
           </div>
           <div class="config-field">
             <label for="waiting-helper-count">Helpers</label>
@@ -288,6 +288,7 @@
   </audio>
 
   <script src="/socket.io/socket.io.js"></script>
+  <script src="data/questions-db.js"></script>
   <script src="data.js"></script>
   <script src="helpers.js"></script>
   <script src="app.js"></script>

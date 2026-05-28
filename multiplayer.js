@@ -6,6 +6,7 @@
   let multiplayerMode = false;
   let hasAnswered = false;
   let currentRound = null;
+  let helperUsedThisRound = false;
 
   // ===== ELEMENTS =====
   const el = {
@@ -124,6 +125,7 @@
     });
 
     window.Helpers.markSpent('50-50');
+    helperUsedThisRound = true;
     updateHelperButtons(false);
   }
 
@@ -138,6 +140,7 @@
     el.guilleAiPanel.style.display = '';
 
     window.Helpers.markSpent('guilleai');
+    helperUsedThisRound = true;
     updateHelperButtons(false);
   }
 
@@ -146,6 +149,7 @@
 
     setRoundHint(currentRound.hint, true);
     window.Helpers.markSpent('extra-hint');
+    helperUsedThisRound = true;
     updateHelperButtons(false);
   }
 
@@ -153,6 +157,7 @@
   socket.on('game-started', ({ totalRounds, helperCount }) => {
     multiplayerMode = true;
     currentRound = null;
+    helperUsedThisRound = false;
 
     window.Helpers?.reset();
     window.Helpers?.init(Number.isInteger(helperCount) ? helperCount : 3);
@@ -174,6 +179,7 @@
   socket.on('round-start', (round) => {
     hasAnswered = false;
     currentRound = round;
+    helperUsedThisRound = false;
 
     el.categoryTag.textContent = round.category;
     el.round.textContent = round.index + 1;
@@ -221,7 +227,7 @@
     buttons.forEach((b) => { b.disabled = true; });
     updateHelperButtons(true);
 
-    socket.emit('submit-answer', { optionIndex });
+    socket.emit('submit-answer', { optionIndex, usedHelper: helperUsedThisRound });
 
     el.waitingIndicator.style.display = 'flex';
     el.answerProgressText.textContent = 'Waiting for others...';

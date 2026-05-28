@@ -1,0 +1,5540 @@
+// Generated from data/questions.json by scripts/generate_questions_db.py
+window.QUESTIONS_DB = {
+  "version": 1,
+  "description": "Question database for FakeRealGame. Each round has three real terms and one invented impostor.",
+  "categories": [
+    "Chemical Elements",
+    "IAU Constellations",
+    "Planetary Moons",
+    "Dinosaurs",
+    "Programming Languages",
+    "Cognitive Biases",
+    "Logical Fallacies",
+    "Music Theory Terms",
+    "Typography Terms",
+    "Coffee Drinks",
+    "Cheeses",
+    "Board Games",
+    "Classical Composers",
+    "Art Movements",
+    "Greek Philosophers",
+    "Norse Mythology",
+    "Ancient Civilizations",
+    "Mountain Ranges",
+    "Cloud Types",
+    "Marine Animals",
+    "World Currencies",
+    "SI Units",
+    "Literary Terms",
+    "Chess Terms",
+    "Architectural Styles"
+  ],
+  "researchSources": [
+    "https://iauarchive.eso.org/public/themes/constellations/",
+    "https://iupac.org/what-we-do/periodic-table-of-elements/",
+    "https://science.nasa.gov/solar-system/moons/facts/",
+    "https://www.nhm.ac.uk/discover/dino-directory.html"
+  ],
+  "questions": [
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Actinium",
+          "fake": false
+        },
+        {
+          "word": "Fermium",
+          "fake": false
+        },
+        {
+          "word": "Mendelevium",
+          "fake": false
+        },
+        {
+          "word": "Lanthium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lanthium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Dysprosium",
+          "fake": false
+        },
+        {
+          "word": "Livermorium",
+          "fake": false
+        },
+        {
+          "word": "Actinium",
+          "fake": false
+        },
+        {
+          "word": "Novarium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Novarium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Hafnium",
+          "fake": false
+        },
+        {
+          "word": "Oganesson",
+          "fake": false
+        },
+        {
+          "word": "Dysprosium",
+          "fake": false
+        },
+        {
+          "word": "Aurelium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aurelium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Mendelevium",
+          "fake": false
+        },
+        {
+          "word": "Cerium",
+          "fake": false
+        },
+        {
+          "word": "Hafnium",
+          "fake": false
+        },
+        {
+          "word": "Cerulium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cerulium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Actinium",
+          "fake": false
+        },
+        {
+          "word": "Fermium",
+          "fake": false
+        },
+        {
+          "word": "Mendelevium",
+          "fake": false
+        },
+        {
+          "word": "Ferronium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ferronium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Dysprosium",
+          "fake": false
+        },
+        {
+          "word": "Livermorium",
+          "fake": false
+        },
+        {
+          "word": "Actinium",
+          "fake": false
+        },
+        {
+          "word": "Quantium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Quantium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Hafnium",
+          "fake": false
+        },
+        {
+          "word": "Oganesson",
+          "fake": false
+        },
+        {
+          "word": "Dysprosium",
+          "fake": false
+        },
+        {
+          "word": "Rhadium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Rhadium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Mendelevium",
+          "fake": false
+        },
+        {
+          "word": "Cerium",
+          "fake": false
+        },
+        {
+          "word": "Hafnium",
+          "fake": false
+        },
+        {
+          "word": "Silvium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Silvium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Actinium",
+          "fake": false
+        },
+        {
+          "word": "Fermium",
+          "fake": false
+        },
+        {
+          "word": "Mendelevium",
+          "fake": false
+        },
+        {
+          "word": "Vesperium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vesperium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "Chemical Elements",
+      "options": [
+        {
+          "word": "Dysprosium",
+          "fake": false
+        },
+        {
+          "word": "Livermorium",
+          "fake": false
+        },
+        {
+          "word": "Actinium",
+          "fake": false
+        },
+        {
+          "word": "Zenthium",
+          "fake": true
+        }
+      ],
+      "hint": "\"Zenthium\" is the impostor. The impostor is invented; the other options are official chemical element names."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Andromeda",
+          "fake": false
+        },
+        {
+          "word": "Fornax",
+          "fake": false
+        },
+        {
+          "word": "Monoceros",
+          "fake": false
+        },
+        {
+          "word": "Tethralis",
+          "fake": true
+        }
+      ],
+      "hint": "\"Tethralis\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Delphinus",
+          "fake": false
+        },
+        {
+          "word": "Lacerta",
+          "fake": false
+        },
+        {
+          "word": "Andromeda",
+          "fake": false
+        },
+        {
+          "word": "Aurelion",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aurelion\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Grus",
+          "fake": false
+        },
+        {
+          "word": "Volans",
+          "fake": false
+        },
+        {
+          "word": "Delphinus",
+          "fake": false
+        },
+        {
+          "word": "Draconis Major",
+          "fake": true
+        }
+      ],
+      "hint": "\"Draconis Major\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Monoceros",
+          "fake": false
+        },
+        {
+          "word": "Carina",
+          "fake": false
+        },
+        {
+          "word": "Grus",
+          "fake": false
+        },
+        {
+          "word": "Noctua",
+          "fake": true
+        }
+      ],
+      "hint": "\"Noctua\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Andromeda",
+          "fake": false
+        },
+        {
+          "word": "Fornax",
+          "fake": false
+        },
+        {
+          "word": "Monoceros",
+          "fake": false
+        },
+        {
+          "word": "Vulpina",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vulpina\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Delphinus",
+          "fake": false
+        },
+        {
+          "word": "Lacerta",
+          "fake": false
+        },
+        {
+          "word": "Andromeda",
+          "fake": false
+        },
+        {
+          "word": "Cervus",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cervus\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Grus",
+          "fake": false
+        },
+        {
+          "word": "Volans",
+          "fake": false
+        },
+        {
+          "word": "Delphinus",
+          "fake": false
+        },
+        {
+          "word": "Orbellum",
+          "fake": true
+        }
+      ],
+      "hint": "\"Orbellum\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Monoceros",
+          "fake": false
+        },
+        {
+          "word": "Carina",
+          "fake": false
+        },
+        {
+          "word": "Grus",
+          "fake": false
+        },
+        {
+          "word": "Solisca",
+          "fake": true
+        }
+      ],
+      "hint": "\"Solisca\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Andromeda",
+          "fake": false
+        },
+        {
+          "word": "Fornax",
+          "fake": false
+        },
+        {
+          "word": "Monoceros",
+          "fake": false
+        },
+        {
+          "word": "Lyronyx",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lyronyx\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "IAU Constellations",
+      "options": [
+        {
+          "word": "Delphinus",
+          "fake": false
+        },
+        {
+          "word": "Lacerta",
+          "fake": false
+        },
+        {
+          "word": "Andromeda",
+          "fake": false
+        },
+        {
+          "word": "Nimbora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Nimbora\" is the impostor. The impostor is not one of the 88 constellations recognized by the International Astronomical Union."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Amalthea",
+          "fake": false
+        },
+        {
+          "word": "Ganymede",
+          "fake": false
+        },
+        {
+          "word": "Nereid",
+          "fake": false
+        },
+        {
+          "word": "Caldora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Caldora\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Enceladus",
+          "fake": false
+        },
+        {
+          "word": "Miranda",
+          "fake": false
+        },
+        {
+          "word": "Amalthea",
+          "fake": false
+        },
+        {
+          "word": "Vireon",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vireon\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Hyperion",
+          "fake": false
+        },
+        {
+          "word": "Triton",
+          "fake": false
+        },
+        {
+          "word": "Enceladus",
+          "fake": false
+        },
+        {
+          "word": "Lunessa",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lunessa\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Nereid",
+          "fake": false
+        },
+        {
+          "word": "Deimos",
+          "fake": false
+        },
+        {
+          "word": "Hyperion",
+          "fake": false
+        },
+        {
+          "word": "Marithel",
+          "fake": true
+        }
+      ],
+      "hint": "\"Marithel\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Amalthea",
+          "fake": false
+        },
+        {
+          "word": "Ganymede",
+          "fake": false
+        },
+        {
+          "word": "Nereid",
+          "fake": false
+        },
+        {
+          "word": "Orbatis",
+          "fake": true
+        }
+      ],
+      "hint": "\"Orbatis\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Enceladus",
+          "fake": false
+        },
+        {
+          "word": "Miranda",
+          "fake": false
+        },
+        {
+          "word": "Amalthea",
+          "fake": false
+        },
+        {
+          "word": "Thalora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Thalora\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Hyperion",
+          "fake": false
+        },
+        {
+          "word": "Triton",
+          "fake": false
+        },
+        {
+          "word": "Enceladus",
+          "fake": false
+        },
+        {
+          "word": "Jovia",
+          "fake": true
+        }
+      ],
+      "hint": "\"Jovia\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Nereid",
+          "fake": false
+        },
+        {
+          "word": "Deimos",
+          "fake": false
+        },
+        {
+          "word": "Hyperion",
+          "fake": false
+        },
+        {
+          "word": "Saturna Minor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Saturna Minor\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Amalthea",
+          "fake": false
+        },
+        {
+          "word": "Ganymede",
+          "fake": false
+        },
+        {
+          "word": "Nereid",
+          "fake": false
+        },
+        {
+          "word": "Neptara",
+          "fake": true
+        }
+      ],
+      "hint": "\"Neptara\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Planetary Moons",
+      "options": [
+        {
+          "word": "Enceladus",
+          "fake": false
+        },
+        {
+          "word": "Miranda",
+          "fake": false
+        },
+        {
+          "word": "Amalthea",
+          "fake": false
+        },
+        {
+          "word": "Umbrielis",
+          "fake": true
+        }
+      ],
+      "hint": "\"Umbrielis\" is the impostor. The impostor is made up; the other options are named moons in our solar system."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Allosaurus",
+          "fake": false
+        },
+        {
+          "word": "Gallimimus",
+          "fake": false
+        },
+        {
+          "word": "Spinosaurus",
+          "fake": false
+        },
+        {
+          "word": "Velocidactyl",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velocidactyl\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Carnotaurus",
+          "fake": false
+        },
+        {
+          "word": "Parasaurolophus",
+          "fake": false
+        },
+        {
+          "word": "Allosaurus",
+          "fake": false
+        },
+        {
+          "word": "Raptorexus",
+          "fake": true
+        }
+      ],
+      "hint": "\"Raptorexus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Iguanodon",
+          "fake": false
+        },
+        {
+          "word": "Velociraptor",
+          "fake": false
+        },
+        {
+          "word": "Carnotaurus",
+          "fake": false
+        },
+        {
+          "word": "Triceradon",
+          "fake": true
+        }
+      ],
+      "hint": "\"Triceradon\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Spinosaurus",
+          "fake": false
+        },
+        {
+          "word": "Baryonyx",
+          "fake": false
+        },
+        {
+          "word": "Iguanodon",
+          "fake": false
+        },
+        {
+          "word": "Megaclawrus",
+          "fake": true
+        }
+      ],
+      "hint": "\"Megaclawrus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Allosaurus",
+          "fake": false
+        },
+        {
+          "word": "Gallimimus",
+          "fake": false
+        },
+        {
+          "word": "Spinosaurus",
+          "fake": false
+        },
+        {
+          "word": "Stegonyx",
+          "fake": true
+        }
+      ],
+      "hint": "\"Stegonyx\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Carnotaurus",
+          "fake": false
+        },
+        {
+          "word": "Parasaurolophus",
+          "fake": false
+        },
+        {
+          "word": "Allosaurus",
+          "fake": false
+        },
+        {
+          "word": "Brontoraptor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Brontoraptor\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Iguanodon",
+          "fake": false
+        },
+        {
+          "word": "Velociraptor",
+          "fake": false
+        },
+        {
+          "word": "Carnotaurus",
+          "fake": false
+        },
+        {
+          "word": "Ceratovenator",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ceratovenator\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Spinosaurus",
+          "fake": false
+        },
+        {
+          "word": "Baryonyx",
+          "fake": false
+        },
+        {
+          "word": "Iguanodon",
+          "fake": false
+        },
+        {
+          "word": "Dinomimus Rex",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dinomimus Rex\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Allosaurus",
+          "fake": false
+        },
+        {
+          "word": "Gallimimus",
+          "fake": false
+        },
+        {
+          "word": "Spinosaurus",
+          "fake": false
+        },
+        {
+          "word": "Thundrosaurus",
+          "fake": true
+        }
+      ],
+      "hint": "\"Thundrosaurus\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Dinosaurs",
+      "options": [
+        {
+          "word": "Carnotaurus",
+          "fake": false
+        },
+        {
+          "word": "Parasaurolophus",
+          "fake": false
+        },
+        {
+          "word": "Allosaurus",
+          "fake": false
+        },
+        {
+          "word": "Clawceratops",
+          "fake": true
+        }
+      ],
+      "hint": "\"Clawceratops\" is the impostor. The impostor is a dinosaur-like invention; the other options are real dinosaur genera."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Ada",
+          "fake": false
+        },
+        {
+          "word": "Erlang",
+          "fake": false
+        },
+        {
+          "word": "Kotlin",
+          "fake": false
+        },
+        {
+          "word": "Marble",
+          "fake": true
+        }
+      ],
+      "hint": "\"Marble\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Dart",
+          "fake": false
+        },
+        {
+          "word": "Julia",
+          "fake": false
+        },
+        {
+          "word": "Ada",
+          "fake": false
+        },
+        {
+          "word": "CopperScript",
+          "fake": true
+        }
+      ],
+      "hint": "\"CopperScript\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Forth",
+          "fake": false
+        },
+        {
+          "word": "Rust",
+          "fake": false
+        },
+        {
+          "word": "Dart",
+          "fake": false
+        },
+        {
+          "word": "Lattice",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lattice\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Kotlin",
+          "fake": false
+        },
+        {
+          "word": "Crystal",
+          "fake": false
+        },
+        {
+          "word": "Forth",
+          "fake": false
+        },
+        {
+          "word": "Orchid",
+          "fake": true
+        }
+      ],
+      "hint": "\"Orchid\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Ada",
+          "fake": false
+        },
+        {
+          "word": "Erlang",
+          "fake": false
+        },
+        {
+          "word": "Kotlin",
+          "fake": false
+        },
+        {
+          "word": "ZephyrLang",
+          "fake": true
+        }
+      ],
+      "hint": "\"ZephyrLang\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Dart",
+          "fake": false
+        },
+        {
+          "word": "Julia",
+          "fake": false
+        },
+        {
+          "word": "Ada",
+          "fake": false
+        },
+        {
+          "word": "Pebble",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pebble\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Forth",
+          "fake": false
+        },
+        {
+          "word": "Rust",
+          "fake": false
+        },
+        {
+          "word": "Dart",
+          "fake": false
+        },
+        {
+          "word": "Northstar",
+          "fake": true
+        }
+      ],
+      "hint": "\"Northstar\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Kotlin",
+          "fake": false
+        },
+        {
+          "word": "Crystal",
+          "fake": false
+        },
+        {
+          "word": "Forth",
+          "fake": false
+        },
+        {
+          "word": "QuantaScript",
+          "fake": true
+        }
+      ],
+      "hint": "\"QuantaScript\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Ada",
+          "fake": false
+        },
+        {
+          "word": "Erlang",
+          "fake": false
+        },
+        {
+          "word": "Kotlin",
+          "fake": false
+        },
+        {
+          "word": "Vellum",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vellum\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Programming Languages",
+      "options": [
+        {
+          "word": "Dart",
+          "fake": false
+        },
+        {
+          "word": "Julia",
+          "fake": false
+        },
+        {
+          "word": "Ada",
+          "fake": false
+        },
+        {
+          "word": "Bonsai",
+          "fake": true
+        }
+      ],
+      "hint": "\"Bonsai\" is the impostor. The impostor is not a recognized programming language; the others are real languages."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Anchoring bias",
+          "fake": false
+        },
+        {
+          "word": "Hindsight bias",
+          "fake": false
+        },
+        {
+          "word": "Planning fallacy",
+          "fake": false
+        },
+        {
+          "word": "Recency mirage",
+          "fake": true
+        }
+      ],
+      "hint": "\"Recency mirage\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Confirmation bias",
+          "fake": false
+        },
+        {
+          "word": "Optimism bias",
+          "fake": false
+        },
+        {
+          "word": "Anchoring bias",
+          "fake": false
+        },
+        {
+          "word": "Certainty drift",
+          "fake": true
+        }
+      ],
+      "hint": "\"Certainty drift\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Illusory correlation",
+          "fake": false
+        },
+        {
+          "word": "Status quo bias",
+          "fake": false
+        },
+        {
+          "word": "Confirmation bias",
+          "fake": false
+        },
+        {
+          "word": "Halo rebound",
+          "fake": true
+        }
+      ],
+      "hint": "\"Halo rebound\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Planning fallacy",
+          "fake": false
+        },
+        {
+          "word": "Bandwagon effect",
+          "fake": false
+        },
+        {
+          "word": "Illusory correlation",
+          "fake": false
+        },
+        {
+          "word": "Memory varnish",
+          "fake": true
+        }
+      ],
+      "hint": "\"Memory varnish\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Anchoring bias",
+          "fake": false
+        },
+        {
+          "word": "Hindsight bias",
+          "fake": false
+        },
+        {
+          "word": "Planning fallacy",
+          "fake": false
+        },
+        {
+          "word": "Novelty magnetism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Novelty magnetism\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Confirmation bias",
+          "fake": false
+        },
+        {
+          "word": "Optimism bias",
+          "fake": false
+        },
+        {
+          "word": "Anchoring bias",
+          "fake": false
+        },
+        {
+          "word": "Pattern fog",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pattern fog\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Illusory correlation",
+          "fake": false
+        },
+        {
+          "word": "Status quo bias",
+          "fake": false
+        },
+        {
+          "word": "Confirmation bias",
+          "fake": false
+        },
+        {
+          "word": "Truth sparkle",
+          "fake": true
+        }
+      ],
+      "hint": "\"Truth sparkle\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Planning fallacy",
+          "fake": false
+        },
+        {
+          "word": "Bandwagon effect",
+          "fake": false
+        },
+        {
+          "word": "Illusory correlation",
+          "fake": false
+        },
+        {
+          "word": "Choice gravity",
+          "fake": true
+        }
+      ],
+      "hint": "\"Choice gravity\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Anchoring bias",
+          "fake": false
+        },
+        {
+          "word": "Hindsight bias",
+          "fake": false
+        },
+        {
+          "word": "Planning fallacy",
+          "fake": false
+        },
+        {
+          "word": "Consensus shimmer",
+          "fake": true
+        }
+      ],
+      "hint": "\"Consensus shimmer\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Cognitive Biases",
+      "options": [
+        {
+          "word": "Confirmation bias",
+          "fake": false
+        },
+        {
+          "word": "Optimism bias",
+          "fake": false
+        },
+        {
+          "word": "Anchoring bias",
+          "fake": false
+        },
+        {
+          "word": "Focus echo",
+          "fake": true
+        }
+      ],
+      "hint": "\"Focus echo\" is the impostor. The impostor sounds psychological but is not a standard cognitive bias name."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Ad hominem",
+          "fake": false
+        },
+        {
+          "word": "No true Scotsman",
+          "fake": false
+        },
+        {
+          "word": "Straw man",
+          "fake": false
+        },
+        {
+          "word": "Silver lantern",
+          "fake": true
+        }
+      ],
+      "hint": "\"Silver lantern\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "False dilemma",
+          "fake": false
+        },
+        {
+          "word": "Slippery slope",
+          "fake": false
+        },
+        {
+          "word": "Ad hominem",
+          "fake": false
+        },
+        {
+          "word": "Golden staircase",
+          "fake": true
+        }
+      ],
+      "hint": "\"Golden staircase\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Post hoc ergo propter hoc",
+          "fake": false
+        },
+        {
+          "word": "Texas sharpshooter",
+          "fake": false
+        },
+        {
+          "word": "False dilemma",
+          "fake": false
+        },
+        {
+          "word": "Mirror puddle",
+          "fake": true
+        }
+      ],
+      "hint": "\"Mirror puddle\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Straw man",
+          "fake": false
+        },
+        {
+          "word": "Begging the question",
+          "fake": false
+        },
+        {
+          "word": "Post hoc ergo propter hoc",
+          "fake": false
+        },
+        {
+          "word": "Paper crown",
+          "fake": true
+        }
+      ],
+      "hint": "\"Paper crown\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Ad hominem",
+          "fake": false
+        },
+        {
+          "word": "No true Scotsman",
+          "fake": false
+        },
+        {
+          "word": "Straw man",
+          "fake": false
+        },
+        {
+          "word": "Circular candle",
+          "fake": true
+        }
+      ],
+      "hint": "\"Circular candle\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "False dilemma",
+          "fake": false
+        },
+        {
+          "word": "Slippery slope",
+          "fake": false
+        },
+        {
+          "word": "Ad hominem",
+          "fake": false
+        },
+        {
+          "word": "Velvet ladder",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velvet ladder\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Post hoc ergo propter hoc",
+          "fake": false
+        },
+        {
+          "word": "Texas sharpshooter",
+          "fake": false
+        },
+        {
+          "word": "False dilemma",
+          "fake": false
+        },
+        {
+          "word": "Silent trumpet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Silent trumpet\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Straw man",
+          "fake": false
+        },
+        {
+          "word": "Begging the question",
+          "fake": false
+        },
+        {
+          "word": "Post hoc ergo propter hoc",
+          "fake": false
+        },
+        {
+          "word": "Frosted premise",
+          "fake": true
+        }
+      ],
+      "hint": "\"Frosted premise\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "Ad hominem",
+          "fake": false
+        },
+        {
+          "word": "No true Scotsman",
+          "fake": false
+        },
+        {
+          "word": "Straw man",
+          "fake": false
+        },
+        {
+          "word": "Lantern bridge",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lantern bridge\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Logical Fallacies",
+      "options": [
+        {
+          "word": "False dilemma",
+          "fake": false
+        },
+        {
+          "word": "Slippery slope",
+          "fake": false
+        },
+        {
+          "word": "Ad hominem",
+          "fake": false
+        },
+        {
+          "word": "False umbrella",
+          "fake": true
+        }
+      ],
+      "hint": "\"False umbrella\" is the impostor. The impostor is invented; the other options name recognized informal or formal fallacies."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Appoggiatura",
+          "fake": false
+        },
+        {
+          "word": "Hemiola",
+          "fake": false
+        },
+        {
+          "word": "Polyrhythm",
+          "fake": false
+        },
+        {
+          "word": "Tritonata",
+          "fake": true
+        }
+      ],
+      "hint": "\"Tritonata\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Counterpoint",
+          "fake": false
+        },
+        {
+          "word": "Ostinato",
+          "fake": false
+        },
+        {
+          "word": "Appoggiatura",
+          "fake": false
+        },
+        {
+          "word": "Arpeggial",
+          "fake": true
+        }
+      ],
+      "hint": "\"Arpeggial\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Interval",
+          "fake": false
+        },
+        {
+          "word": "Tritone",
+          "fake": false
+        },
+        {
+          "word": "Counterpoint",
+          "fake": false
+        },
+        {
+          "word": "Cadenzino",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cadenzino\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Polyrhythm",
+          "fake": false
+        },
+        {
+          "word": "Cadenza",
+          "fake": false
+        },
+        {
+          "word": "Interval",
+          "fake": false
+        },
+        {
+          "word": "HarmoniqueX",
+          "fake": true
+        }
+      ],
+      "hint": "\"HarmoniqueX\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Appoggiatura",
+          "fake": false
+        },
+        {
+          "word": "Hemiola",
+          "fake": false
+        },
+        {
+          "word": "Polyrhythm",
+          "fake": false
+        },
+        {
+          "word": "Melodrake",
+          "fake": true
+        }
+      ],
+      "hint": "\"Melodrake\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Counterpoint",
+          "fake": false
+        },
+        {
+          "word": "Ostinato",
+          "fake": false
+        },
+        {
+          "word": "Appoggiatura",
+          "fake": false
+        },
+        {
+          "word": "Syncopata",
+          "fake": true
+        }
+      ],
+      "hint": "\"Syncopata\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Interval",
+          "fake": false
+        },
+        {
+          "word": "Tritone",
+          "fake": false
+        },
+        {
+          "word": "Counterpoint",
+          "fake": false
+        },
+        {
+          "word": "Tempolet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Tempolet\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Polyrhythm",
+          "fake": false
+        },
+        {
+          "word": "Cadenza",
+          "fake": false
+        },
+        {
+          "word": "Interval",
+          "fake": false
+        },
+        {
+          "word": "Chordora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Chordora\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Appoggiatura",
+          "fake": false
+        },
+        {
+          "word": "Hemiola",
+          "fake": false
+        },
+        {
+          "word": "Polyrhythm",
+          "fake": false
+        },
+        {
+          "word": "Ostinelle",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ostinelle\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Music Theory Terms",
+      "options": [
+        {
+          "word": "Counterpoint",
+          "fake": false
+        },
+        {
+          "word": "Ostinato",
+          "fake": false
+        },
+        {
+          "word": "Appoggiatura",
+          "fake": false
+        },
+        {
+          "word": "Motiflex",
+          "fake": true
+        }
+      ],
+      "hint": "\"Motiflex\" is the impostor. The impostor is made up; the other options are established music theory or notation terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Ascender",
+          "fake": false
+        },
+        {
+          "word": "Kerning",
+          "fake": false
+        },
+        {
+          "word": "Tracking",
+          "fake": false
+        },
+        {
+          "word": "Glyphline",
+          "fake": true
+        }
+      ],
+      "hint": "\"Glyphline\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Descender",
+          "fake": false
+        },
+        {
+          "word": "Serif",
+          "fake": false
+        },
+        {
+          "word": "Ascender",
+          "fake": false
+        },
+        {
+          "word": "Kernmark",
+          "fake": true
+        }
+      ],
+      "hint": "\"Kernmark\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Leading",
+          "fake": false
+        },
+        {
+          "word": "Aperture",
+          "fake": false
+        },
+        {
+          "word": "Descender",
+          "fake": false
+        },
+        {
+          "word": "Seriflet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Seriflet\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Tracking",
+          "fake": false
+        },
+        {
+          "word": "Counter",
+          "fake": false
+        },
+        {
+          "word": "Leading",
+          "fake": false
+        },
+        {
+          "word": "Typoraid",
+          "fake": true
+        }
+      ],
+      "hint": "\"Typoraid\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Ascender",
+          "fake": false
+        },
+        {
+          "word": "Kerning",
+          "fake": false
+        },
+        {
+          "word": "Tracking",
+          "fake": false
+        },
+        {
+          "word": "Baselock",
+          "fake": true
+        }
+      ],
+      "hint": "\"Baselock\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Descender",
+          "fake": false
+        },
+        {
+          "word": "Serif",
+          "fake": false
+        },
+        {
+          "word": "Ascender",
+          "fake": false
+        },
+        {
+          "word": "Ligaframe",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ligaframe\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Leading",
+          "fake": false
+        },
+        {
+          "word": "Aperture",
+          "fake": false
+        },
+        {
+          "word": "Descender",
+          "fake": false
+        },
+        {
+          "word": "CounterlineX",
+          "fake": true
+        }
+      ],
+      "hint": "\"CounterlineX\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Tracking",
+          "fake": false
+        },
+        {
+          "word": "Counter",
+          "fake": false
+        },
+        {
+          "word": "Leading",
+          "fake": false
+        },
+        {
+          "word": "Ascendry",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ascendry\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Ascender",
+          "fake": false
+        },
+        {
+          "word": "Kerning",
+          "fake": false
+        },
+        {
+          "word": "Tracking",
+          "fake": false
+        },
+        {
+          "word": "Inkspan",
+          "fake": true
+        }
+      ],
+      "hint": "\"Inkspan\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Typography Terms",
+      "options": [
+        {
+          "word": "Descender",
+          "fake": false
+        },
+        {
+          "word": "Serif",
+          "fake": false
+        },
+        {
+          "word": "Ascender",
+          "fake": false
+        },
+        {
+          "word": "Letterwell",
+          "fake": true
+        }
+      ],
+      "hint": "\"Letterwell\" is the impostor. The impostor is invented; the other options are real typography or type-design terms."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Affogato",
+          "fake": false
+        },
+        {
+          "word": "Espresso",
+          "fake": false
+        },
+        {
+          "word": "Macchiato",
+          "fake": false
+        },
+        {
+          "word": "Brevitato",
+          "fake": true
+        }
+      ],
+      "hint": "\"Brevitato\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Cortado",
+          "fake": false
+        },
+        {
+          "word": "Lungo",
+          "fake": false
+        },
+        {
+          "word": "Affogato",
+          "fake": false
+        },
+        {
+          "word": "Foamado",
+          "fake": true
+        }
+      ],
+      "hint": "\"Foamado\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Flat white",
+          "fake": false
+        },
+        {
+          "word": "Ristretto",
+          "fake": false
+        },
+        {
+          "word": "Cortado",
+          "fake": false
+        },
+        {
+          "word": "Cremello",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cremello\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Macchiato",
+          "fake": false
+        },
+        {
+          "word": "Cappuccino",
+          "fake": false
+        },
+        {
+          "word": "Flat white",
+          "fake": false
+        },
+        {
+          "word": "Steamretto",
+          "fake": true
+        }
+      ],
+      "hint": "\"Steamretto\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Affogato",
+          "fake": false
+        },
+        {
+          "word": "Espresso",
+          "fake": false
+        },
+        {
+          "word": "Macchiato",
+          "fake": false
+        },
+        {
+          "word": "Macchino",
+          "fake": true
+        }
+      ],
+      "hint": "\"Macchino\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Cortado",
+          "fake": false
+        },
+        {
+          "word": "Lungo",
+          "fake": false
+        },
+        {
+          "word": "Affogato",
+          "fake": false
+        },
+        {
+          "word": "Lattesso",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lattesso\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Flat white",
+          "fake": false
+        },
+        {
+          "word": "Ristretto",
+          "fake": false
+        },
+        {
+          "word": "Cortado",
+          "fake": false
+        },
+        {
+          "word": "Cortanino",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cortanino\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Macchiato",
+          "fake": false
+        },
+        {
+          "word": "Cappuccino",
+          "fake": false
+        },
+        {
+          "word": "Flat white",
+          "fake": false
+        },
+        {
+          "word": "MocharinoX",
+          "fake": true
+        }
+      ],
+      "hint": "\"MocharinoX\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Affogato",
+          "fake": false
+        },
+        {
+          "word": "Espresso",
+          "fake": false
+        },
+        {
+          "word": "Macchiato",
+          "fake": false
+        },
+        {
+          "word": "Espressini",
+          "fake": true
+        }
+      ],
+      "hint": "\"Espressini\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Coffee Drinks",
+      "options": [
+        {
+          "word": "Cortado",
+          "fake": false
+        },
+        {
+          "word": "Lungo",
+          "fake": false
+        },
+        {
+          "word": "Affogato",
+          "fake": false
+        },
+        {
+          "word": "Aromato",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aromato\" is the impostor. The impostor is invented; the other options are real coffee drinks or preparations."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Asiago",
+          "fake": false
+        },
+        {
+          "word": "Mimolette",
+          "fake": false
+        },
+        {
+          "word": "Roquefort",
+          "fake": false
+        },
+        {
+          "word": "Vacherol",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vacherol\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Halloumi",
+          "fake": false
+        },
+        {
+          "word": "Reblochon",
+          "fake": false
+        },
+        {
+          "word": "Asiago",
+          "fake": false
+        },
+        {
+          "word": "Brielette",
+          "fake": true
+        }
+      ],
+      "hint": "\"Brielette\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Paneer",
+          "fake": false
+        },
+        {
+          "word": "Vacherin",
+          "fake": false
+        },
+        {
+          "word": "Halloumi",
+          "fake": false
+        },
+        {
+          "word": "Goudarin",
+          "fake": true
+        }
+      ],
+      "hint": "\"Goudarin\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Roquefort",
+          "fake": false
+        },
+        {
+          "word": "Gorgonzola",
+          "fake": false
+        },
+        {
+          "word": "Paneer",
+          "fake": false
+        },
+        {
+          "word": "Morbella",
+          "fake": true
+        }
+      ],
+      "hint": "\"Morbella\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Asiago",
+          "fake": false
+        },
+        {
+          "word": "Mimolette",
+          "fake": false
+        },
+        {
+          "word": "Roquefort",
+          "fake": false
+        },
+        {
+          "word": "Cheddano",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cheddano\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Halloumi",
+          "fake": false
+        },
+        {
+          "word": "Reblochon",
+          "fake": false
+        },
+        {
+          "word": "Asiago",
+          "fake": false
+        },
+        {
+          "word": "Fetessa",
+          "fake": true
+        }
+      ],
+      "hint": "\"Fetessa\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Paneer",
+          "fake": false
+        },
+        {
+          "word": "Vacherin",
+          "fake": false
+        },
+        {
+          "word": "Halloumi",
+          "fake": false
+        },
+        {
+          "word": "TalegginoX",
+          "fake": true
+        }
+      ],
+      "hint": "\"TalegginoX\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Roquefort",
+          "fake": false
+        },
+        {
+          "word": "Gorgonzola",
+          "fake": false
+        },
+        {
+          "word": "Paneer",
+          "fake": false
+        },
+        {
+          "word": "Roquefin",
+          "fake": true
+        }
+      ],
+      "hint": "\"Roquefin\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Asiago",
+          "fake": false
+        },
+        {
+          "word": "Mimolette",
+          "fake": false
+        },
+        {
+          "word": "Roquefort",
+          "fake": false
+        },
+        {
+          "word": "Manchera",
+          "fake": true
+        }
+      ],
+      "hint": "\"Manchera\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Cheeses",
+      "options": [
+        {
+          "word": "Halloumi",
+          "fake": false
+        },
+        {
+          "word": "Reblochon",
+          "fake": false
+        },
+        {
+          "word": "Asiago",
+          "fake": false
+        },
+        {
+          "word": "Curdova",
+          "fake": true
+        }
+      ],
+      "hint": "\"Curdova\" is the impostor. The impostor is invented; the other options are real cheese names."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Azul",
+          "fake": false
+        },
+        {
+          "word": "Gloomhaven",
+          "fake": false
+        },
+        {
+          "word": "Scythe",
+          "fake": false
+        },
+        {
+          "word": "Port RoyaleX",
+          "fake": true
+        }
+      ],
+      "hint": "\"Port RoyaleX\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Codenames",
+          "fake": false
+        },
+        {
+          "word": "Root",
+          "fake": false
+        },
+        {
+          "word": "Azul",
+          "fake": false
+        },
+        {
+          "word": "Crownmarket",
+          "fake": true
+        }
+      ],
+      "hint": "\"Crownmarket\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Pandemic",
+          "fake": false
+        },
+        {
+          "word": "Wingspan",
+          "fake": false
+        },
+        {
+          "word": "Codenames",
+          "fake": false
+        },
+        {
+          "word": "Tilehaven",
+          "fake": true
+        }
+      ],
+      "hint": "\"Tilehaven\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Scythe",
+          "fake": false
+        },
+        {
+          "word": "Catan",
+          "fake": false
+        },
+        {
+          "word": "Pandemic",
+          "fake": false
+        },
+        {
+          "word": "Hex Harbor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Hex Harbor\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Azul",
+          "fake": false
+        },
+        {
+          "word": "Gloomhaven",
+          "fake": false
+        },
+        {
+          "word": "Scythe",
+          "fake": false
+        },
+        {
+          "word": "Castle Orchard",
+          "fake": true
+        }
+      ],
+      "hint": "\"Castle Orchard\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Codenames",
+          "fake": false
+        },
+        {
+          "word": "Root",
+          "fake": false
+        },
+        {
+          "word": "Azul",
+          "fake": false
+        },
+        {
+          "word": "Trainspire",
+          "fake": true
+        }
+      ],
+      "hint": "\"Trainspire\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Pandemic",
+          "fake": false
+        },
+        {
+          "word": "Wingspan",
+          "fake": false
+        },
+        {
+          "word": "Codenames",
+          "fake": false
+        },
+        {
+          "word": "Meadowlords",
+          "fake": true
+        }
+      ],
+      "hint": "\"Meadowlords\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Scythe",
+          "fake": false
+        },
+        {
+          "word": "Catan",
+          "fake": false
+        },
+        {
+          "word": "Pandemic",
+          "fake": false
+        },
+        {
+          "word": "Guildglass",
+          "fake": true
+        }
+      ],
+      "hint": "\"Guildglass\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Azul",
+          "fake": false
+        },
+        {
+          "word": "Gloomhaven",
+          "fake": false
+        },
+        {
+          "word": "Scythe",
+          "fake": false
+        },
+        {
+          "word": "Dice Abbey",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dice Abbey\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Board Games",
+      "options": [
+        {
+          "word": "Codenames",
+          "fake": false
+        },
+        {
+          "word": "Root",
+          "fake": false
+        },
+        {
+          "word": "Azul",
+          "fake": false
+        },
+        {
+          "word": "Kingdom Loom",
+          "fake": true
+        }
+      ],
+      "hint": "\"Kingdom Loom\" is the impostor. The impostor is invented; the other options are real tabletop board game titles."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Bach",
+          "fake": false
+        },
+        {
+          "word": "Dvořák",
+          "fake": false
+        },
+        {
+          "word": "Ravel",
+          "fake": false
+        },
+        {
+          "word": "Morvinsky",
+          "fake": true
+        }
+      ],
+      "hint": "\"Morvinsky\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Brahms",
+          "fake": false
+        },
+        {
+          "word": "Mozart",
+          "fake": false
+        },
+        {
+          "word": "Bach",
+          "fake": false
+        },
+        {
+          "word": "Ravelsky",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ravelsky\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Handel",
+          "fake": false
+        },
+        {
+          "word": "Stravinsky",
+          "fake": false
+        },
+        {
+          "word": "Brahms",
+          "fake": false
+        },
+        {
+          "word": "Bachmannino",
+          "fake": true
+        }
+      ],
+      "hint": "\"Bachmannino\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Ravel",
+          "fake": false
+        },
+        {
+          "word": "Beethoven",
+          "fake": false
+        },
+        {
+          "word": "Handel",
+          "fake": false
+        },
+        {
+          "word": "Debussart",
+          "fake": true
+        }
+      ],
+      "hint": "\"Debussart\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Bach",
+          "fake": false
+        },
+        {
+          "word": "Dvořák",
+          "fake": false
+        },
+        {
+          "word": "Ravel",
+          "fake": false
+        },
+        {
+          "word": "Mozarini",
+          "fake": true
+        }
+      ],
+      "hint": "\"Mozarini\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Brahms",
+          "fake": false
+        },
+        {
+          "word": "Mozart",
+          "fake": false
+        },
+        {
+          "word": "Bach",
+          "fake": false
+        },
+        {
+          "word": "Sibeliusson",
+          "fake": true
+        }
+      ],
+      "hint": "\"Sibeliusson\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Handel",
+          "fake": false
+        },
+        {
+          "word": "Stravinsky",
+          "fake": false
+        },
+        {
+          "word": "Brahms",
+          "fake": false
+        },
+        {
+          "word": "Handelberg",
+          "fake": true
+        }
+      ],
+      "hint": "\"Handelberg\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Ravel",
+          "fake": false
+        },
+        {
+          "word": "Beethoven",
+          "fake": false
+        },
+        {
+          "word": "Handel",
+          "fake": false
+        },
+        {
+          "word": "Dvoranek",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dvoranek\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Bach",
+          "fake": false
+        },
+        {
+          "word": "Dvořák",
+          "fake": false
+        },
+        {
+          "word": "Ravel",
+          "fake": false
+        },
+        {
+          "word": "Mahlerov",
+          "fake": true
+        }
+      ],
+      "hint": "\"Mahlerov\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Classical Composers",
+      "options": [
+        {
+          "word": "Brahms",
+          "fake": false
+        },
+        {
+          "word": "Mozart",
+          "fake": false
+        },
+        {
+          "word": "Bach",
+          "fake": false
+        },
+        {
+          "word": "Bartokian",
+          "fake": true
+        }
+      ],
+      "hint": "\"Bartokian\" is the impostor. The impostor is invented; the other options are real classical composers."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Baroque",
+          "fake": false
+        },
+        {
+          "word": "Futurism",
+          "fake": false
+        },
+        {
+          "word": "Realism",
+          "fake": false
+        },
+        {
+          "word": "LuminarismX",
+          "fake": true
+        }
+      ],
+      "hint": "\"LuminarismX\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Expressionism",
+          "fake": false
+        },
+        {
+          "word": "Pointillism",
+          "fake": false
+        },
+        {
+          "word": "Baroque",
+          "fake": false
+        },
+        {
+          "word": "Chromalism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Chromalism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Impressionism",
+          "fake": false
+        },
+        {
+          "word": "Surrealism",
+          "fake": false
+        },
+        {
+          "word": "Expressionism",
+          "fake": false
+        },
+        {
+          "word": "Velvetism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velvetism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Realism",
+          "fake": false
+        },
+        {
+          "word": "Dada",
+          "fake": false
+        },
+        {
+          "word": "Impressionism",
+          "fake": false
+        },
+        {
+          "word": "Post-Fauval",
+          "fake": true
+        }
+      ],
+      "hint": "\"Post-Fauval\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Baroque",
+          "fake": false
+        },
+        {
+          "word": "Futurism",
+          "fake": false
+        },
+        {
+          "word": "Realism",
+          "fake": false
+        },
+        {
+          "word": "Neo-Glintism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Neo-Glintism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Expressionism",
+          "fake": false
+        },
+        {
+          "word": "Pointillism",
+          "fake": false
+        },
+        {
+          "word": "Baroque",
+          "fake": false
+        },
+        {
+          "word": "Cuborism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cuborism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Impressionism",
+          "fake": false
+        },
+        {
+          "word": "Surrealism",
+          "fake": false
+        },
+        {
+          "word": "Expressionism",
+          "fake": false
+        },
+        {
+          "word": "Soft RealismX",
+          "fake": true
+        }
+      ],
+      "hint": "\"Soft RealismX\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Realism",
+          "fake": false
+        },
+        {
+          "word": "Dada",
+          "fake": false
+        },
+        {
+          "word": "Impressionism",
+          "fake": false
+        },
+        {
+          "word": "Prismatism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Prismatism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Baroque",
+          "fake": false
+        },
+        {
+          "word": "Futurism",
+          "fake": false
+        },
+        {
+          "word": "Realism",
+          "fake": false
+        },
+        {
+          "word": "Dreamline",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dreamline\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Art Movements",
+      "options": [
+        {
+          "word": "Expressionism",
+          "fake": false
+        },
+        {
+          "word": "Pointillism",
+          "fake": false
+        },
+        {
+          "word": "Baroque",
+          "fake": false
+        },
+        {
+          "word": "Auralism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Auralism\" is the impostor. The impostor is invented; the other options are real art movements or styles."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Anaxagoras",
+          "fake": false
+        },
+        {
+          "word": "Epicurus",
+          "fake": false
+        },
+        {
+          "word": "Plotinus",
+          "fake": false
+        },
+        {
+          "word": "Xenophilos",
+          "fake": true
+        }
+      ],
+      "hint": "\"Xenophilos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Democritus",
+          "fake": false
+        },
+        {
+          "word": "Plato",
+          "fake": false
+        },
+        {
+          "word": "Anaxagoras",
+          "fake": false
+        },
+        {
+          "word": "Kleonides",
+          "fake": true
+        }
+      ],
+      "hint": "\"Kleonides\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Heraclitus",
+          "fake": false
+        },
+        {
+          "word": "Zeno of Elea",
+          "fake": false
+        },
+        {
+          "word": "Democritus",
+          "fake": false
+        },
+        {
+          "word": "Aristonex",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aristonex\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Plotinus",
+          "fake": false
+        },
+        {
+          "word": "Aristotle",
+          "fake": false
+        },
+        {
+          "word": "Heraclitus",
+          "fake": false
+        },
+        {
+          "word": "Praxitos",
+          "fake": true
+        }
+      ],
+      "hint": "\"Praxitos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Anaxagoras",
+          "fake": false
+        },
+        {
+          "word": "Epicurus",
+          "fake": false
+        },
+        {
+          "word": "Plotinus",
+          "fake": false
+        },
+        {
+          "word": "Theomander",
+          "fake": true
+        }
+      ],
+      "hint": "\"Theomander\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Democritus",
+          "fake": false
+        },
+        {
+          "word": "Plato",
+          "fake": false
+        },
+        {
+          "word": "Anaxagoras",
+          "fake": false
+        },
+        {
+          "word": "Demosophos",
+          "fake": true
+        }
+      ],
+      "hint": "\"Demosophos\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Heraclitus",
+          "fake": false
+        },
+        {
+          "word": "Zeno of Elea",
+          "fake": false
+        },
+        {
+          "word": "Democritus",
+          "fake": false
+        },
+        {
+          "word": "Zenarchus",
+          "fake": true
+        }
+      ],
+      "hint": "\"Zenarchus\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Plotinus",
+          "fake": false
+        },
+        {
+          "word": "Aristotle",
+          "fake": false
+        },
+        {
+          "word": "Heraclitus",
+          "fake": false
+        },
+        {
+          "word": "Platonor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Platonor\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Anaxagoras",
+          "fake": false
+        },
+        {
+          "word": "Epicurus",
+          "fake": false
+        },
+        {
+          "word": "Plotinus",
+          "fake": false
+        },
+        {
+          "word": "Epikreon",
+          "fake": true
+        }
+      ],
+      "hint": "\"Epikreon\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Greek Philosophers",
+      "options": [
+        {
+          "word": "Democritus",
+          "fake": false
+        },
+        {
+          "word": "Plato",
+          "fake": false
+        },
+        {
+          "word": "Anaxagoras",
+          "fake": false
+        },
+        {
+          "word": "Sophirion",
+          "fake": true
+        }
+      ],
+      "hint": "\"Sophirion\" is the impostor. The impostor is invented; the other options are real ancient Greek philosophers."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Baldur",
+          "fake": false
+        },
+        {
+          "word": "Hel",
+          "fake": false
+        },
+        {
+          "word": "Odin",
+          "fake": false
+        },
+        {
+          "word": "Helmora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Helmora\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Freya",
+          "fake": false
+        },
+        {
+          "word": "Mjölnir",
+          "fake": false
+        },
+        {
+          "word": "Baldur",
+          "fake": false
+        },
+        {
+          "word": "Stormvik",
+          "fake": true
+        }
+      ],
+      "hint": "\"Stormvik\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Jörmungandr",
+          "fake": false
+        },
+        {
+          "word": "Yggdrasil",
+          "fake": false
+        },
+        {
+          "word": "Freya",
+          "fake": false
+        },
+        {
+          "word": "Runefall",
+          "fake": true
+        }
+      ],
+      "hint": "\"Runefall\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Odin",
+          "fake": false
+        },
+        {
+          "word": "Fenrir",
+          "fake": false
+        },
+        {
+          "word": "Jörmungandr",
+          "fake": false
+        },
+        {
+          "word": "Skaldor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Skaldor\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Baldur",
+          "fake": false
+        },
+        {
+          "word": "Hel",
+          "fake": false
+        },
+        {
+          "word": "Odin",
+          "fake": false
+        },
+        {
+          "word": "Frostheim",
+          "fake": true
+        }
+      ],
+      "hint": "\"Frostheim\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Freya",
+          "fake": false
+        },
+        {
+          "word": "Mjölnir",
+          "fake": false
+        },
+        {
+          "word": "Baldur",
+          "fake": false
+        },
+        {
+          "word": "Lokivar",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lokivar\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Jörmungandr",
+          "fake": false
+        },
+        {
+          "word": "Yggdrasil",
+          "fake": false
+        },
+        {
+          "word": "Freya",
+          "fake": false
+        },
+        {
+          "word": "Odinspear",
+          "fake": true
+        }
+      ],
+      "hint": "\"Odinspear\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Odin",
+          "fake": false
+        },
+        {
+          "word": "Fenrir",
+          "fake": false
+        },
+        {
+          "word": "Jörmungandr",
+          "fake": false
+        },
+        {
+          "word": "Thundra",
+          "fake": true
+        }
+      ],
+      "hint": "\"Thundra\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Baldur",
+          "fake": false
+        },
+        {
+          "word": "Hel",
+          "fake": false
+        },
+        {
+          "word": "Odin",
+          "fake": false
+        },
+        {
+          "word": "Bifrostar",
+          "fake": true
+        }
+      ],
+      "hint": "\"Bifrostar\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Norse Mythology",
+      "options": [
+        {
+          "word": "Freya",
+          "fake": false
+        },
+        {
+          "word": "Mjölnir",
+          "fake": false
+        },
+        {
+          "word": "Baldur",
+          "fake": false
+        },
+        {
+          "word": "Wolfsaga",
+          "fake": true
+        }
+      ],
+      "hint": "\"Wolfsaga\" is the impostor. The impostor is invented; the other options are names from Norse myth."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Akkadians",
+          "fake": false
+        },
+        {
+          "word": "Hittites",
+          "fake": false
+        },
+        {
+          "word": "Olmecs",
+          "fake": false
+        },
+        {
+          "word": "Laruthians",
+          "fake": true
+        }
+      ],
+      "hint": "\"Laruthians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Carthaginians",
+          "fake": false
+        },
+        {
+          "word": "Nabataeans",
+          "fake": false
+        },
+        {
+          "word": "Akkadians",
+          "fake": false
+        },
+        {
+          "word": "Velorians",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Minoans",
+          "fake": false
+        },
+        {
+          "word": "Sumerians",
+          "fake": false
+        },
+        {
+          "word": "Carthaginians",
+          "fake": false
+        },
+        {
+          "word": "Namarites",
+          "fake": true
+        }
+      ],
+      "hint": "\"Namarites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Olmecs",
+          "fake": false
+        },
+        {
+          "word": "Babylonians",
+          "fake": false
+        },
+        {
+          "word": "Minoans",
+          "fake": false
+        },
+        {
+          "word": "Aurelites",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aurelites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Akkadians",
+          "fake": false
+        },
+        {
+          "word": "Hittites",
+          "fake": false
+        },
+        {
+          "word": "Olmecs",
+          "fake": false
+        },
+        {
+          "word": "Solmecans",
+          "fake": true
+        }
+      ],
+      "hint": "\"Solmecans\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Carthaginians",
+          "fake": false
+        },
+        {
+          "word": "Nabataeans",
+          "fake": false
+        },
+        {
+          "word": "Akkadians",
+          "fake": false
+        },
+        {
+          "word": "Karthunians",
+          "fake": true
+        }
+      ],
+      "hint": "\"Karthunians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Minoans",
+          "fake": false
+        },
+        {
+          "word": "Sumerians",
+          "fake": false
+        },
+        {
+          "word": "Carthaginians",
+          "fake": false
+        },
+        {
+          "word": "Etrunites",
+          "fake": true
+        }
+      ],
+      "hint": "\"Etrunites\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Olmecs",
+          "fake": false
+        },
+        {
+          "word": "Babylonians",
+          "fake": false
+        },
+        {
+          "word": "Minoans",
+          "fake": false
+        },
+        {
+          "word": "Mycorians",
+          "fake": true
+        }
+      ],
+      "hint": "\"Mycorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Akkadians",
+          "fake": false
+        },
+        {
+          "word": "Hittites",
+          "fake": false
+        },
+        {
+          "word": "Olmecs",
+          "fake": false
+        },
+        {
+          "word": "Hittorians",
+          "fake": true
+        }
+      ],
+      "hint": "\"Hittorians\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Ancient Civilizations",
+      "options": [
+        {
+          "word": "Carthaginians",
+          "fake": false
+        },
+        {
+          "word": "Nabataeans",
+          "fake": false
+        },
+        {
+          "word": "Akkadians",
+          "fake": false
+        },
+        {
+          "word": "Phoebans",
+          "fake": true
+        }
+      ],
+      "hint": "\"Phoebans\" is the impostor. The impostor is invented; the other options are real ancient peoples or civilizations."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Alps",
+          "fake": false
+        },
+        {
+          "word": "Drakensberg",
+          "fake": false
+        },
+        {
+          "word": "Rockies",
+          "fake": false
+        },
+        {
+          "word": "Veligar",
+          "fake": true
+        }
+      ],
+      "hint": "\"Veligar\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Atlas",
+          "fake": false
+        },
+        {
+          "word": "Pyrenees",
+          "fake": false
+        },
+        {
+          "word": "Alps",
+          "fake": false
+        },
+        {
+          "word": "Northspine",
+          "fake": true
+        }
+      ],
+      "hint": "\"Northspine\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Himalayas",
+          "fake": false
+        },
+        {
+          "word": "Urals",
+          "fake": false
+        },
+        {
+          "word": "Atlas",
+          "fake": false
+        },
+        {
+          "word": "Eldar Ridge",
+          "fake": true
+        }
+      ],
+      "hint": "\"Eldar Ridge\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Rockies",
+          "fake": false
+        },
+        {
+          "word": "Appalachians",
+          "fake": false
+        },
+        {
+          "word": "Himalayas",
+          "fake": false
+        },
+        {
+          "word": "Velvet Alps",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velvet Alps\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Alps",
+          "fake": false
+        },
+        {
+          "word": "Drakensberg",
+          "fake": false
+        },
+        {
+          "word": "Rockies",
+          "fake": false
+        },
+        {
+          "word": "Thornreach",
+          "fake": true
+        }
+      ],
+      "hint": "\"Thornreach\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Atlas",
+          "fake": false
+        },
+        {
+          "word": "Pyrenees",
+          "fake": false
+        },
+        {
+          "word": "Alps",
+          "fake": false
+        },
+        {
+          "word": "Solmar Range",
+          "fake": true
+        }
+      ],
+      "hint": "\"Solmar Range\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Himalayas",
+          "fake": false
+        },
+        {
+          "word": "Urals",
+          "fake": false
+        },
+        {
+          "word": "Atlas",
+          "fake": false
+        },
+        {
+          "word": "Karakel",
+          "fake": true
+        }
+      ],
+      "hint": "\"Karakel\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Rockies",
+          "fake": false
+        },
+        {
+          "word": "Appalachians",
+          "fake": false
+        },
+        {
+          "word": "Himalayas",
+          "fake": false
+        },
+        {
+          "word": "Cloudspine",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cloudspine\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Alps",
+          "fake": false
+        },
+        {
+          "word": "Drakensberg",
+          "fake": false
+        },
+        {
+          "word": "Rockies",
+          "fake": false
+        },
+        {
+          "word": "Highmere",
+          "fake": true
+        }
+      ],
+      "hint": "\"Highmere\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Mountain Ranges",
+      "options": [
+        {
+          "word": "Atlas",
+          "fake": false
+        },
+        {
+          "word": "Pyrenees",
+          "fake": false
+        },
+        {
+          "word": "Alps",
+          "fake": false
+        },
+        {
+          "word": "Dawnfold",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dawnfold\" is the impostor. The impostor is invented; the other options are real mountain ranges."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Altocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cumulonimbus",
+          "fake": false
+        },
+        {
+          "word": "Stratus",
+          "fake": false
+        },
+        {
+          "word": "Fractuson",
+          "fake": true
+        }
+      ],
+      "hint": "\"Fractuson\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Cirrostratus",
+          "fake": false
+        },
+        {
+          "word": "Stratocumulus",
+          "fake": false
+        },
+        {
+          "word": "Altocumulus",
+          "fake": false
+        },
+        {
+          "word": "Vaporalis",
+          "fake": true
+        }
+      ],
+      "hint": "\"Vaporalis\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Cumulus",
+          "fake": false
+        },
+        {
+          "word": "Lenticularis",
+          "fake": false
+        },
+        {
+          "word": "Cirrostratus",
+          "fake": false
+        },
+        {
+          "word": "Nimbuslet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Nimbuslet\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Stratus",
+          "fake": false
+        },
+        {
+          "word": "Cirrocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cumulus",
+          "fake": false
+        },
+        {
+          "word": "Cirrava",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cirrava\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Altocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cumulonimbus",
+          "fake": false
+        },
+        {
+          "word": "Stratus",
+          "fake": false
+        },
+        {
+          "word": "Stratolux",
+          "fake": true
+        }
+      ],
+      "hint": "\"Stratolux\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Cirrostratus",
+          "fake": false
+        },
+        {
+          "word": "Stratocumulus",
+          "fake": false
+        },
+        {
+          "word": "Altocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cumulora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cumulora\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Cumulus",
+          "fake": false
+        },
+        {
+          "word": "Lenticularis",
+          "fake": false
+        },
+        {
+          "word": "Cirrostratus",
+          "fake": false
+        },
+        {
+          "word": "Mistiform",
+          "fake": true
+        }
+      ],
+      "hint": "\"Mistiform\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Stratus",
+          "fake": false
+        },
+        {
+          "word": "Cirrocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cumulus",
+          "fake": false
+        },
+        {
+          "word": "Aerolace",
+          "fake": true
+        }
+      ],
+      "hint": "\"Aerolace\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Altocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cumulonimbus",
+          "fake": false
+        },
+        {
+          "word": "Stratus",
+          "fake": false
+        },
+        {
+          "word": "Rainveil",
+          "fake": true
+        }
+      ],
+      "hint": "\"Rainveil\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Cloud Types",
+      "options": [
+        {
+          "word": "Cirrostratus",
+          "fake": false
+        },
+        {
+          "word": "Stratocumulus",
+          "fake": false
+        },
+        {
+          "word": "Altocumulus",
+          "fake": false
+        },
+        {
+          "word": "Cloudora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Cloudora\" is the impostor. The impostor is invented; the other options are real cloud genera or supplementary cloud features."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Blue tang",
+          "fake": false
+        },
+        {
+          "word": "Moray eel",
+          "fake": false
+        },
+        {
+          "word": "Sea cucumber",
+          "fake": false
+        },
+        {
+          "word": "Glasswhale",
+          "fake": true
+        }
+      ],
+      "hint": "\"Glasswhale\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Lionfish",
+          "fake": false
+        },
+        {
+          "word": "Oarfish",
+          "fake": false
+        },
+        {
+          "word": "Blue tang",
+          "fake": false
+        },
+        {
+          "word": "Coral lynx",
+          "fake": true
+        }
+      ],
+      "hint": "\"Coral lynx\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Nautilus",
+          "fake": false
+        },
+        {
+          "word": "Vaquita",
+          "fake": false
+        },
+        {
+          "word": "Lionfish",
+          "fake": false
+        },
+        {
+          "word": "Velvet squidling",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velvet squidling\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Sea cucumber",
+          "fake": false
+        },
+        {
+          "word": "Dugong",
+          "fake": false
+        },
+        {
+          "word": "Nautilus",
+          "fake": false
+        },
+        {
+          "word": "Moonfin",
+          "fake": true
+        }
+      ],
+      "hint": "\"Moonfin\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Blue tang",
+          "fake": false
+        },
+        {
+          "word": "Moray eel",
+          "fake": false
+        },
+        {
+          "word": "Sea cucumber",
+          "fake": false
+        },
+        {
+          "word": "Reef panther",
+          "fake": true
+        }
+      ],
+      "hint": "\"Reef panther\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Lionfish",
+          "fake": false
+        },
+        {
+          "word": "Oarfish",
+          "fake": false
+        },
+        {
+          "word": "Blue tang",
+          "fake": false
+        },
+        {
+          "word": "Sapphire krillbeast",
+          "fake": true
+        }
+      ],
+      "hint": "\"Sapphire krillbeast\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Nautilus",
+          "fake": false
+        },
+        {
+          "word": "Vaquita",
+          "fake": false
+        },
+        {
+          "word": "Lionfish",
+          "fake": false
+        },
+        {
+          "word": "Ocealisk",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ocealisk\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Sea cucumber",
+          "fake": false
+        },
+        {
+          "word": "Dugong",
+          "fake": false
+        },
+        {
+          "word": "Nautilus",
+          "fake": false
+        },
+        {
+          "word": "Pearlback",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pearlback\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Blue tang",
+          "fake": false
+        },
+        {
+          "word": "Moray eel",
+          "fake": false
+        },
+        {
+          "word": "Sea cucumber",
+          "fake": false
+        },
+        {
+          "word": "Tide fox",
+          "fake": true
+        }
+      ],
+      "hint": "\"Tide fox\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "Marine Animals",
+      "options": [
+        {
+          "word": "Lionfish",
+          "fake": false
+        },
+        {
+          "word": "Oarfish",
+          "fake": false
+        },
+        {
+          "word": "Blue tang",
+          "fake": false
+        },
+        {
+          "word": "Kelpwing",
+          "fake": true
+        }
+      ],
+      "hint": "\"Kelpwing\" is the impostor. The impostor is invented; the other options are real marine animals."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Baht",
+          "fake": false
+        },
+        {
+          "word": "Euro",
+          "fake": false
+        },
+        {
+          "word": "Peso",
+          "fake": false
+        },
+        {
+          "word": "Florinex",
+          "fake": true
+        }
+      ],
+      "hint": "\"Florinex\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Dirham",
+          "fake": false
+        },
+        {
+          "word": "Leu",
+          "fake": false
+        },
+        {
+          "word": "Baht",
+          "fake": false
+        },
+        {
+          "word": "Creda",
+          "fake": true
+        }
+      ],
+      "hint": "\"Creda\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Forint",
+          "fake": false
+        },
+        {
+          "word": "Won",
+          "fake": false
+        },
+        {
+          "word": "Dirham",
+          "fake": false
+        },
+        {
+          "word": "Dollaroid",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dollaroid\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Peso",
+          "fake": false
+        },
+        {
+          "word": "Dinar",
+          "fake": false
+        },
+        {
+          "word": "Forint",
+          "fake": false
+        },
+        {
+          "word": "Eurotal",
+          "fake": true
+        }
+      ],
+      "hint": "\"Eurotal\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Baht",
+          "fake": false
+        },
+        {
+          "word": "Euro",
+          "fake": false
+        },
+        {
+          "word": "Peso",
+          "fake": false
+        },
+        {
+          "word": "Rupino",
+          "fake": true
+        }
+      ],
+      "hint": "\"Rupino\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Dirham",
+          "fake": false
+        },
+        {
+          "word": "Leu",
+          "fake": false
+        },
+        {
+          "word": "Baht",
+          "fake": false
+        },
+        {
+          "word": "Pesara",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pesara\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Forint",
+          "fake": false
+        },
+        {
+          "word": "Won",
+          "fake": false
+        },
+        {
+          "word": "Dirham",
+          "fake": false
+        },
+        {
+          "word": "Krint",
+          "fake": true
+        }
+      ],
+      "hint": "\"Krint\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Peso",
+          "fake": false
+        },
+        {
+          "word": "Dinar",
+          "fake": false
+        },
+        {
+          "word": "Forint",
+          "fake": false
+        },
+        {
+          "word": "Levora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Levora\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Baht",
+          "fake": false
+        },
+        {
+          "word": "Euro",
+          "fake": false
+        },
+        {
+          "word": "Peso",
+          "fake": false
+        },
+        {
+          "word": "Dinariq",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dinariq\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "World Currencies",
+      "options": [
+        {
+          "word": "Dirham",
+          "fake": false
+        },
+        {
+          "word": "Leu",
+          "fake": false
+        },
+        {
+          "word": "Baht",
+          "fake": false
+        },
+        {
+          "word": "Wonlet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Wonlet\" is the impostor. The impostor is invented; the other options are real currency names."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Ampere",
+          "fake": false
+        },
+        {
+          "word": "Joule",
+          "fake": false
+        },
+        {
+          "word": "Pascal",
+          "fake": false
+        },
+        {
+          "word": "Lumel",
+          "fake": true
+        }
+      ],
+      "hint": "\"Lumel\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Coulomb",
+          "fake": false
+        },
+        {
+          "word": "Newton",
+          "fake": false
+        },
+        {
+          "word": "Ampere",
+          "fake": false
+        },
+        {
+          "word": "Voltane",
+          "fake": true
+        }
+      ],
+      "hint": "\"Voltane\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Kelvin",
+          "fake": false
+        },
+        {
+          "word": "Watt",
+          "fake": false
+        },
+        {
+          "word": "Coulomb",
+          "fake": false
+        },
+        {
+          "word": "Joulon",
+          "fake": true
+        }
+      ],
+      "hint": "\"Joulon\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Pascal",
+          "fake": false
+        },
+        {
+          "word": "Candela",
+          "fake": false
+        },
+        {
+          "word": "Kelvin",
+          "fake": false
+        },
+        {
+          "word": "Newtra",
+          "fake": true
+        }
+      ],
+      "hint": "\"Newtra\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Ampere",
+          "fake": false
+        },
+        {
+          "word": "Joule",
+          "fake": false
+        },
+        {
+          "word": "Pascal",
+          "fake": false
+        },
+        {
+          "word": "Kelvion",
+          "fake": true
+        }
+      ],
+      "hint": "\"Kelvion\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Coulomb",
+          "fake": false
+        },
+        {
+          "word": "Newton",
+          "fake": false
+        },
+        {
+          "word": "Ampere",
+          "fake": false
+        },
+        {
+          "word": "Pascalis",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pascalis\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Kelvin",
+          "fake": false
+        },
+        {
+          "word": "Watt",
+          "fake": false
+        },
+        {
+          "word": "Coulomb",
+          "fake": false
+        },
+        {
+          "word": "Candor",
+          "fake": true
+        }
+      ],
+      "hint": "\"Candor\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Pascal",
+          "fake": false
+        },
+        {
+          "word": "Candela",
+          "fake": false
+        },
+        {
+          "word": "Kelvin",
+          "fake": false
+        },
+        {
+          "word": "Teslon",
+          "fake": true
+        }
+      ],
+      "hint": "\"Teslon\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Ampere",
+          "fake": false
+        },
+        {
+          "word": "Joule",
+          "fake": false
+        },
+        {
+          "word": "Pascal",
+          "fake": false
+        },
+        {
+          "word": "Metrion",
+          "fake": true
+        }
+      ],
+      "hint": "\"Metrion\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "SI Units",
+      "options": [
+        {
+          "word": "Coulomb",
+          "fake": false
+        },
+        {
+          "word": "Newton",
+          "fake": false
+        },
+        {
+          "word": "Ampere",
+          "fake": false
+        },
+        {
+          "word": "Faradayne",
+          "fake": true
+        }
+      ],
+      "hint": "\"Faradayne\" is the impostor. The impostor is invented; the other options are real SI base or derived units."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Allegory",
+          "fake": false
+        },
+        {
+          "word": "Enjambment",
+          "fake": false
+        },
+        {
+          "word": "Metaphor",
+          "fake": false
+        },
+        {
+          "word": "Plotglow",
+          "fake": true
+        }
+      ],
+      "hint": "\"Plotglow\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Caesura",
+          "fake": false
+        },
+        {
+          "word": "Irony",
+          "fake": false
+        },
+        {
+          "word": "Allegory",
+          "fake": false
+        },
+        {
+          "word": "Metaphoria",
+          "fake": true
+        }
+      ],
+      "hint": "\"Metaphoria\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Foreshadowing",
+          "fake": false
+        },
+        {
+          "word": "Synecdoche",
+          "fake": false
+        },
+        {
+          "word": "Caesura",
+          "fake": false
+        },
+        {
+          "word": "Ironique",
+          "fake": true
+        }
+      ],
+      "hint": "\"Ironique\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Metaphor",
+          "fake": false
+        },
+        {
+          "word": "Anaphora",
+          "fake": false
+        },
+        {
+          "word": "Foreshadowing",
+          "fake": false
+        },
+        {
+          "word": "Verselet",
+          "fake": true
+        }
+      ],
+      "hint": "\"Verselet\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Allegory",
+          "fake": false
+        },
+        {
+          "word": "Enjambment",
+          "fake": false
+        },
+        {
+          "word": "Metaphor",
+          "fake": false
+        },
+        {
+          "word": "Narratone",
+          "fake": true
+        }
+      ],
+      "hint": "\"Narratone\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Caesura",
+          "fake": false
+        },
+        {
+          "word": "Irony",
+          "fake": false
+        },
+        {
+          "word": "Allegory",
+          "fake": false
+        },
+        {
+          "word": "Symbolift",
+          "fake": true
+        }
+      ],
+      "hint": "\"Symbolift\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Foreshadowing",
+          "fake": false
+        },
+        {
+          "word": "Synecdoche",
+          "fake": false
+        },
+        {
+          "word": "Caesura",
+          "fake": false
+        },
+        {
+          "word": "Foreshade",
+          "fake": true
+        }
+      ],
+      "hint": "\"Foreshade\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Metaphor",
+          "fake": false
+        },
+        {
+          "word": "Anaphora",
+          "fake": false
+        },
+        {
+          "word": "Foreshadowing",
+          "fake": false
+        },
+        {
+          "word": "Dictionalism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Dictionalism\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Allegory",
+          "fake": false
+        },
+        {
+          "word": "Enjambment",
+          "fake": false
+        },
+        {
+          "word": "Metaphor",
+          "fake": false
+        },
+        {
+          "word": "Motifora",
+          "fake": true
+        }
+      ],
+      "hint": "\"Motifora\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Literary Terms",
+      "options": [
+        {
+          "word": "Caesura",
+          "fake": false
+        },
+        {
+          "word": "Irony",
+          "fake": false
+        },
+        {
+          "word": "Allegory",
+          "fake": false
+        },
+        {
+          "word": "Caesurine",
+          "fake": true
+        }
+      ],
+      "hint": "\"Caesurine\" is the impostor. The impostor is invented; the other options are real literary terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Castling",
+          "fake": false
+        },
+        {
+          "word": "Gambit",
+          "fake": false
+        },
+        {
+          "word": "Stalemate",
+          "fake": false
+        },
+        {
+          "word": "Crownshift",
+          "fake": true
+        }
+      ],
+      "hint": "\"Crownshift\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Fianchetto",
+          "fake": false
+        },
+        {
+          "word": "Skewer",
+          "fake": false
+        },
+        {
+          "word": "Castling",
+          "fake": false
+        },
+        {
+          "word": "Pawnfall",
+          "fake": true
+        }
+      ],
+      "hint": "\"Pawnfall\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Pin",
+          "fake": false
+        },
+        {
+          "word": "Zugzwang",
+          "fake": false
+        },
+        {
+          "word": "Fianchetto",
+          "fake": false
+        },
+        {
+          "word": "Knightlock",
+          "fake": true
+        }
+      ],
+      "hint": "\"Knightlock\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Stalemate",
+          "fake": false
+        },
+        {
+          "word": "En passant",
+          "fake": false
+        },
+        {
+          "word": "Pin",
+          "fake": false
+        },
+        {
+          "word": "Queenveil",
+          "fake": true
+        }
+      ],
+      "hint": "\"Queenveil\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Castling",
+          "fake": false
+        },
+        {
+          "word": "Gambit",
+          "fake": false
+        },
+        {
+          "word": "Stalemate",
+          "fake": false
+        },
+        {
+          "word": "Tempo forkX",
+          "fake": true
+        }
+      ],
+      "hint": "\"Tempo forkX\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Fianchetto",
+          "fake": false
+        },
+        {
+          "word": "Skewer",
+          "fake": false
+        },
+        {
+          "word": "Castling",
+          "fake": false
+        },
+        {
+          "word": "Bishop jump",
+          "fake": true
+        }
+      ],
+      "hint": "\"Bishop jump\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Pin",
+          "fake": false
+        },
+        {
+          "word": "Zugzwang",
+          "fake": false
+        },
+        {
+          "word": "Fianchetto",
+          "fake": false
+        },
+        {
+          "word": "Castlepin",
+          "fake": true
+        }
+      ],
+      "hint": "\"Castlepin\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Stalemate",
+          "fake": false
+        },
+        {
+          "word": "En passant",
+          "fake": false
+        },
+        {
+          "word": "Pin",
+          "fake": false
+        },
+        {
+          "word": "Rookspin",
+          "fake": true
+        }
+      ],
+      "hint": "\"Rookspin\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Castling",
+          "fake": false
+        },
+        {
+          "word": "Gambit",
+          "fake": false
+        },
+        {
+          "word": "Stalemate",
+          "fake": false
+        },
+        {
+          "word": "Matebridge",
+          "fake": true
+        }
+      ],
+      "hint": "\"Matebridge\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Chess Terms",
+      "options": [
+        {
+          "word": "Fianchetto",
+          "fake": false
+        },
+        {
+          "word": "Skewer",
+          "fake": false
+        },
+        {
+          "word": "Castling",
+          "fake": false
+        },
+        {
+          "word": "Zugflare",
+          "fake": true
+        }
+      ],
+      "hint": "\"Zugflare\" is the impostor. The impostor is invented; the other options are real chess terms."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Art Deco",
+          "fake": false
+        },
+        {
+          "word": "Deconstructivism",
+          "fake": false
+        },
+        {
+          "word": "Postmodernism",
+          "fake": false
+        },
+        {
+          "word": "Glass GothicX",
+          "fake": true
+        }
+      ],
+      "hint": "\"Glass GothicX\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Beaux-Arts",
+          "fake": false
+        },
+        {
+          "word": "Neoclassical",
+          "fake": false
+        },
+        {
+          "word": "Art Deco",
+          "fake": false
+        },
+        {
+          "word": "Neo-Brickism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Neo-Brickism\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Gothic",
+          "fake": false
+        },
+        {
+          "word": "Victorian",
+          "fake": false
+        },
+        {
+          "word": "Beaux-Arts",
+          "fake": false
+        },
+        {
+          "word": "Velvet Deco",
+          "fake": true
+        }
+      ],
+      "hint": "\"Velvet Deco\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Postmodernism",
+          "fake": false
+        },
+        {
+          "word": "Bauhaus",
+          "fake": false
+        },
+        {
+          "word": "Gothic",
+          "fake": false
+        },
+        {
+          "word": "Archiform",
+          "fake": true
+        }
+      ],
+      "hint": "\"Archiform\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Art Deco",
+          "fake": false
+        },
+        {
+          "word": "Deconstructivism",
+          "fake": false
+        },
+        {
+          "word": "Postmodernism",
+          "fake": false
+        },
+        {
+          "word": "Baucurve",
+          "fake": true
+        }
+      ],
+      "hint": "\"Baucurve\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Beaux-Arts",
+          "fake": false
+        },
+        {
+          "word": "Neoclassical",
+          "fake": false
+        },
+        {
+          "word": "Art Deco",
+          "fake": false
+        },
+        {
+          "word": "Romanovo",
+          "fake": true
+        }
+      ],
+      "hint": "\"Romanovo\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Gothic",
+          "fake": false
+        },
+        {
+          "word": "Victorian",
+          "fake": false
+        },
+        {
+          "word": "Beaux-Arts",
+          "fake": false
+        },
+        {
+          "word": "Post-Baroquism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Post-Baroquism\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Postmodernism",
+          "fake": false
+        },
+        {
+          "word": "Bauhaus",
+          "fake": false
+        },
+        {
+          "word": "Gothic",
+          "fake": false
+        },
+        {
+          "word": "Modernique",
+          "fake": true
+        }
+      ],
+      "hint": "\"Modernique\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Art Deco",
+          "fake": false
+        },
+        {
+          "word": "Deconstructivism",
+          "fake": false
+        },
+        {
+          "word": "Postmodernism",
+          "fake": false
+        },
+        {
+          "word": "Stonewave",
+          "fake": true
+        }
+      ],
+      "hint": "\"Stonewave\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    },
+    {
+      "category": "Architectural Styles",
+      "options": [
+        {
+          "word": "Beaux-Arts",
+          "fake": false
+        },
+        {
+          "word": "Neoclassical",
+          "fake": false
+        },
+        {
+          "word": "Art Deco",
+          "fake": false
+        },
+        {
+          "word": "Columnarism",
+          "fake": true
+        }
+      ],
+      "hint": "\"Columnarism\" is the impostor. The impostor is invented; the other options are real architectural styles."
+    }
+  ]
+};
